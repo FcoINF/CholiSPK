@@ -1,0 +1,67 @@
+<section class="w-full bg-[#FDFBF7] py-10 px-5 relative overflow-hidden" aria-roledescription="carousel" aria-label="Destacados">
+<h1 class="sr-only">La Choli Sprinkles &amp; Sweet Store – Insumos de repostería y cotillón</h1>
+<div class="max-w-[1320px] mx-auto relative">
+<div class="overflow-hidden rounded-3xl shadow-md border border-[#F0E7DE]" id="hero-viewport">
+<div class="flex items-stretch transition-transform duration-500" id="hero-track" style="transition-timing-function:cubic-bezier(0.16,1,0.3,1)">
+{% for block in section.blocks %}
+  {% assign col = block.settings.collection %}
+  <article class="w-full shrink-0 relative overflow-hidden {{ block.settings.theme }}" aria-label="{{ block.settings.title | escape }}">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center p-6 md:p-10 min-h-[480px] relative">
+      <div class="flex flex-col gap-4 text-left">
+        <div class="hero-pill inline-flex items-center gap-2 self-start px-4 py-1 rounded-full text-[11px] uppercase tracking-wider font-bold">{{ block.settings.badge }}</div>
+        <h2 class="hero-title text-[32px] md:text-[48px] leading-[1.1] tracking-tight font-extrabold">{{ block.settings.title }}</h2>
+        <p class="hero-text text-base max-w-xl font-medium">{{ block.settings.subtitle }}</p>
+        <div class="flex flex-wrap items-center gap-4 pt-1">
+          <a class="hero-cta font-sm text-sm px-8 py-3 rounded-full font-bold flex items-center gap-2 active:scale-95 transition-all shadow-md" href="{{ block.settings.cta_url | default: col.url }}">{{ block.settings.cta_text }} <span class="material-symbols-outlined text-[18px]">arrow_forward</span></a>
+          <a class="hero-cta2 text-sm px-6 py-3 rounded-full font-bold border transition-all" href="/collections/all">{{ section.settings.secondary_label }}</a>
+        </div>
+      </div>
+      <div class="grid grid-cols-2 sm:grid-cols-3 gap-2 md:gap-4">
+        {% if block.settings.products != blank %}
+          {% for p in block.settings.products limit: 3 %}{% render 'product-card', product: p %}{% endfor %}
+        {% elsif col != blank %}
+          {% for p in col.products limit: 3 %}{% render 'product-card', product: p %}{% endfor %}
+        {% endif %}
+      </div>
+    </div>
+  </article>
+{% endfor %}
+</div>
+</div>
+<button class="hidden sm:flex absolute top-1/2 -translate-y-1/2 -left-2 lg:-left-6 w-11 h-11 rounded-full bg-white/95 border border-[#F0E7DE] shadow-md items-center justify-center text-[#5C4033] z-10" id="hero-prev" aria-label="Slide anterior" type="button"><span class="material-symbols-outlined text-[22px]">chevron_left</span></button>
+<button class="hidden sm:flex absolute top-1/2 -translate-y-1/2 -right-2 lg:-right-6 w-11 h-11 rounded-full bg-white/95 border border-[#F0E7DE] shadow-md items-center justify-center text-[#5C4033] z-10" id="hero-next" aria-label="Slide siguiente" type="button"><span class="material-symbols-outlined text-[22px]">chevron_right</span></button>
+<div class="flex items-center justify-center gap-2 pt-4" id="hero-dots" role="tablist" aria-label="Elegir destacado"></div>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-2 sm:gap-4 pt-4 max-w-3xl mx-auto">
+  <div class="flex items-center justify-center gap-2 text-[#5C4033]"><span class="material-symbols-outlined text-[#207255] text-[22px]">local_shipping</span><span class="text-[11px] font-semibold">Envíos rápidos a todo Chile</span></div>
+  <div class="flex items-center justify-center gap-2 text-[#5C4033]"><span class="material-symbols-outlined text-[#E87373] text-[22px]">inventory_2</span><span class="text-[11px] font-semibold">Venta mayor y detalle</span></div>
+  <div class="flex items-center justify-center gap-2 text-[#5C4033]"><span class="material-symbols-outlined text-[#207255] text-[22px]">storefront</span><span class="text-[11px] font-semibold">Retiro en Quilicura</span></div>
+</div>
+</div>
+<style>
+  .theme-halloween { background: #241228; } .theme-halloween .hero-title { color: #FFF7E6; } .theme-halloween .hero-text { color: rgba(255,247,230,.8); }
+  .theme-halloween .hero-pill { background: rgba(255,158,74,.15); color: #FFB066; border: 1px solid rgba(255,158,74,.4); }
+  .theme-halloween .hero-cta { background: #FF9E4A; color: #241228; } .theme-halloween .hero-cta2 { border-color: rgba(255,176,102,.5); color: #FFB066; }
+  .theme-navidad { background: linear-gradient(135deg, #5C0E0E, #7A1212 50%, #3D0A0A); } .theme-navidad .hero-title { color: #FFF9EC; } .theme-navidad .hero-text { color: rgba(255,249,236,.8); }
+  .theme-navidad .hero-pill { background: rgba(255,217,138,.15); color: #FFE3A3; border: 1px solid rgba(255,217,138,.4); }
+  .theme-navidad .hero-cta { background: #FFD98A; color: #5C0E0E; } .theme-navidad .hero-cta2 { border-color: rgba(255,227,163,.5); color: #FFE3A3; }
+  .theme-claro { background: #FDFBF7; } .theme-claro .hero-title { color: #5C4033; } .theme-claro .hero-text { color: rgba(92,64,51,.8); }
+  .theme-claro .hero-pill { background: #FFEBEB; color: #5C4033; border: 1px solid #FFB6B9; }
+  .theme-claro .hero-cta { background: #FF9E9E; color: #333; } .theme-claro .hero-cta2 { background: #FFF3CD; border-color: #F0E7DE; color: #5C4033; }
+</style>
+</section>
+{% schema %}
+{ "name": "Slider portada", "max_blocks": 5,
+  "settings": [ { "type": "text", "id": "secondary_label", "label": "Botón secundario", "default": "Todo el catálogo" } ],
+  "blocks": [ { "type": "slide", "name": "Slide",
+    "settings": [
+      { "type": "collection", "id": "collection", "label": "Colección (productos y enlace)" },
+      { "type": "product_list", "id": "products", "label": "O productos manuales (más comprados)" },
+      { "type": "select", "id": "theme", "label": "Tema visual", "options": [ { "value": "theme-halloween", "label": "Halloween" }, { "value": "theme-navidad", "label": "Navidad" }, { "value": "theme-claro", "label": "Claro marca" } ], "default": "theme-claro" },
+      { "type": "text", "id": "badge", "label": "Insignia", "default": "Temporada" },
+      { "type": "text", "id": "title", "label": "Título", "default": "El universo más dulce" },
+      { "type": "textarea", "id": "subtitle", "label": "Texto", "default": "Insumos de repostería y cotillón." },
+      { "type": "text", "id": "cta_text", "label": "Texto botón", "default": "Ver colección" },
+      { "type": "url", "id": "cta_url", "label": "Enlace botón (vacío = colección)" }
+    ] } ],
+  "presets": [ { "name": "Slider portada" } ] }
+{% endschema %}

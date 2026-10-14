@@ -1,0 +1,50 @@
+<section class="w-full py-10 px-5 bg-[#FDFBF7]" id="contacto">
+<div class="max-w-[1320px] mx-auto flex flex-col gap-6">
+  <div>
+    <span class="text-[11px] text-[#E87373] uppercase tracking-widest font-bold">Atención al cliente</span>
+    <h1 class="text-[24px] md:text-[32px] text-[#5C4033] font-extrabold">Contacto</h1>
+    <p class="text-base text-[#5C4033]/80 max-w-xl font-medium">Escríbenos por el formulario, háblanos por WhatsApp o visítanos en nuestra tienda de Quilicura.</p>
+  </div>
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 items-start">
+    <div class="bg-white rounded-2xl p-6 shadow-sm border border-[#F0E7DE]">
+      {% form 'contact' %}
+        {% if form.posted_successfully? %}
+          <div class="bg-[#E3F7EE] text-[#207255] rounded-xl p-4 text-sm font-bold flex items-center gap-2"><span class="material-symbols-outlined">check_circle</span>¡Mensaje enviado! Te responderemos pronto.</div>
+        {% else %}
+          {% if form.errors %}<div class="bg-[#FFE5E7] text-[#D9534F] rounded-xl p-4 text-sm font-bold">Revisa los campos marcados e inténtalo de nuevo.</div>{% endif %}
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div class="flex flex-col gap-1">
+              <label class="text-xs font-bold" for="ct-nombre">Nombre</label>
+              <input class="bg-[#FDFBF7] border border-[#F0E7DE] rounded-xl px-4 py-2.5 outline-none text-sm w-full" id="ct-nombre" name="contact[nombre]" placeholder="Tu nombre" type="text"/>
+            </div>
+            <div class="flex flex-col gap-1">
+              <label class="text-xs font-bold" for="ct-fono">Teléfono</label>
+              <input class="bg-[#FDFBF7] border border-[#F0E7DE] rounded-xl px-4 py-2.5 outline-none text-sm w-full" id="ct-fono" name="contact[telefono]" placeholder="+56 9 ..." type="tel"/>
+            </div>
+          </div>
+          <div class="flex flex-col gap-1 mt-4">
+            <label class="text-xs font-bold" for="ct-correo">Correo electrónico *</label>
+            <input class="bg-[#FDFBF7] border border-[#F0E7DE] rounded-xl px-4 py-2.5 outline-none text-sm w-full {% if form.errors contains 'email' %}border-[#D9534F]{% endif %}" id="ct-correo" name="contact[email]" placeholder="tucorreo@ejemplo.cl" required type="email"/>
+          </div>
+          <div class="flex flex-col gap-1 mt-4">
+            <label class="text-xs font-bold" for="ct-msg">Comentario</label>
+            <textarea class="bg-[#FDFBF7] border border-[#F0E7DE] rounded-xl px-4 py-2.5 outline-none text-sm w-full min-h-[140px]" id="ct-msg" name="contact[body]" placeholder="¿En qué te ayudamos?"></textarea>
+          </div>
+          <button class="mt-4 w-full bg-[#8DE4C5] hover:bg-[#A8E6CF] text-[#207255] text-sm py-3 rounded-full font-bold flex items-center justify-center gap-2 active:scale-95" type="submit"><span class="material-symbols-outlined text-[20px]">send</span><span>Enviar mensaje</span></button>
+          <a class="mt-2 w-full border border-[#F0E7DE] text-sm py-3 rounded-full font-bold flex items-center justify-center gap-2 text-[#5C4033]" target="_blank" rel="noopener" href="https://wa.me/{{ settings.store_whatsapp }}"><span class="material-symbols-outlined text-[20px]">chat</span><span>O escribir por WhatsApp</span></a>
+        {% endif %}
+      {% endform %}
+    </div>
+    <div class="flex flex-col gap-4">
+      <div class="bg-white rounded-2xl p-6 shadow-sm border border-[#F0E7DE] flex flex-col gap-2">
+        <h3 class="text-[17px] text-[#5C4033] font-bold flex items-center gap-2"><span class="material-symbols-outlined text-[#E87373] text-[22px]">storefront</span>Información de Contacto</h3>
+        <p class="text-sm text-[#5C4033]/80 font-medium"><strong>Tienda:</strong> {{ settings.store_address }}</p>
+        <p class="text-sm font-medium"><a class="font-bold" href="tel:+{{ settings.store_phone }}">Fono: +{{ settings.store_phone }}</a></p>
+        <p class="text-sm text-[#5C4033]/80 font-medium">{{ settings.store_hours }}</p>
+      </div>
+      <iframe title="Mapa tienda La Choli en Quilicura" src="https://www.google.com/maps?q=Av.+Bernardo+O'Higgins+321,+Quilicura,+Chile&output=embed" class="w-full h-64 rounded-2xl border border-[#F0E7DE] shadow-sm" loading="lazy"></iframe>
+    </div>
+  </div>
+</div>
+</section>
+{% schema %}{ "name": "Contacto", "presets": [ { "name": "Contacto" } ] }{% endschema %}

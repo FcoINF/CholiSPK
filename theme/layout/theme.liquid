@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="{{ request.locale.iso_code | default: 'es' }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page_title }}{% unless page_title == shop.name %} – {{ shop.name }}{% endunless %}</title>
+  {% if page_description %}<meta name="description" content="{{ page_description | escape }}">{% endif %}
+  {% if settings.favicon_logo %}<link rel="icon" type="image/png" href="{{ settings.favicon_logo | image_url: width: 64 }}">{% endif %}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: {
+        colors: {
+          'salmon-primary': '{{ settings.color_salmon }}',
+          'salmon-deep': '{{ settings.color_salmon_deep }}',
+          'salmon-subtle': '#FFEBEB', 'salmon-light': '#FFB6B9',
+          'mint-accent': '{{ settings.color_mint }}',
+          'mint-light': '#A8E6CF', 'mint-soft': '#E3F7EE', 'mint-deep': '#207255',
+          'vanilla-cream': '{{ settings.color_vanilla }}', 'vanilla-soft': '#FFFDF5',
+          'chocolate-brown': '{{ settings.color_choco }}', 'charcoal-dark': '#333333',
+          'bone-white': '#FDFBF7', 'surface-card': '#FFFFFF',
+          'neutral-subtle': '#7A736E', 'border-soft': '#F0E7DE',
+          'badge-oferta-bg': '#FFE5E7', 'badge-oferta-text': '#D9534F',
+          'badge-agotado-bg': '#F0EAE1', 'badge-agotado-text': '#8c827a',
+          'badge-sprinkle-text': '#7C5200', outline: '#CFC5BC'
+        },
+        spacing: { gutter: '1.25rem', 'space-xs': '0.25rem', 'space-sm': '0.5rem', 'space-md': '1rem', 'space-lg': '1.5rem', 'space-xl': '2.5rem' }
+      } }
+    };
+  </script>
+  <style>
+    html, body { margin: 0; padding: 0; }
+    body { overscroll-behavior: none; font-family: 'Plus Jakarta Sans', sans-serif; }
+    ::-webkit-scrollbar { display: none; }
+  </style>
+  {{ content_for_header }}
+</head>
+<body class="bg-[#FDFBF7] text-[#333333] antialiased">
+  {% section 'header' %}
+  <main id="MainContent">{{ content_for_layout }}</main>
+  {% section 'footer' %}
+  {% render 'cart-drawer' %}
+  <script src="{{ 'choli.js' | asset_url }}" defer></script>
+</body>
+</html>

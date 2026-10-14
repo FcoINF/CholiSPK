@@ -1,0 +1,21 @@
+{
+  "name": "La Choli",
+  "settings": [
+    { "type": "header", "content": "Marca" },
+    { "type": "image_picker", "id": "logo", "label": "Logo" },
+    { "type": "image_picker", "id": "favicon_logo", "label": "Favicon" },
+    { "type": "color", "id": "color_salmon", "label": "Salmón principal", "default": "#FF9E9E" },
+    { "type": "color", "id": "color_salmon_deep", "label": "Salmón intenso", "default": "#E87373" },
+    { "type": "color", "id": "color_mint", "label": "Menta acento", "default": "#8DE4C5" },
+    { "type": "color", "id": "color_vanilla", "label": "Vainilla crema", "default": "#FFF3CD" },
+    { "type": "color", "id": "color_choco", "label": "Marrón chocolate", "default": "#5C4033" },
+    { "type": "header", "content": "Tienda" },
+    { "type": "text", "id": "topbar_envios", "label": "Texto envíos barra superior", "default": "Envíos a todo Chile" },
+    { "type": "text", "id": "store_address_short", "label": "Dirección corta (barra)", "default": "Tienda en Av. Bernardo O'Higgins 321, Quilicura" },
+    { "type": "text", "id": "store_address", "label": "Dirección completa", "default": "Av. Bernardo O'Higgins 321, local 3, Quilicura, Santiago." },
+    { "type": "text", "id": "store_hours", "label": "Horarios", "default": "Lunes a viernes 10:00 a 19:30 · Sábados 11:00 a 18:00 · Domingo cerrado." },
+    { "type": "text", "id": "store_phone", "label": "Teléfono visible", "default": "56954076195" },
+    { "type": "text", "id": "store_whatsapp", "label": "WhatsApp (solo números)", "default": "56954076195" },
+    { "type": "textarea", "id": "footer_about", "label": "Texto sobre la tienda (footer)", "default": "Tu rincón favorito para endulzar cada celebración con insumos premium de repostería y cotillón temático en Chile." }
+  ]
+}

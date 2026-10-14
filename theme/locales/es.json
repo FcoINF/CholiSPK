@@ -1,0 +1,5 @@
+{
+  "general": { "search": "Buscar", "close": "Cerrar", "next": "Siguiente", "previous": "Anterior" },
+  "cart": { "title": "Tu bolsa", "empty": "Tu bolsa está vacía", "subtotal": "Subtotal", "checkout": "Finalizar compra", "keep_buying": "Seguir comprando" },
+  "account": { "title": "Mi Cuenta", "login": "Iniciar sesión", "register": "Crear cuenta" }
+}

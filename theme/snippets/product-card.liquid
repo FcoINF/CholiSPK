@@ -1,0 +1,22 @@
+<div class="product-card group bg-white rounded-2xl p-2 shadow-sm border border-[#F0E7DE] hover:shadow-md hover:border-[#FFB6B9] transition-all flex flex-col justify-between" data-product-id="{{ product.id }}">
+  <div class="relative w-full aspect-square rounded-xl bg-[#FDFBF7] overflow-hidden flex items-center justify-center p-3 border border-[#F0E7DE]/60">
+    <a href="{{ product.url }}" class="w-full h-full flex items-center justify-center" tabindex="-1"><img loading="lazy" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300" alt="{{ product.title | escape }}" src="{{ product.featured_image | image_url: width: 600 }}"/></a>
+    {% if product.available == false %}<span class="absolute top-2 left-2 bg-[#F0EAE1] text-[#8c827a] text-[10px] px-2 py-0.5 rounded-full uppercase font-bold">Agotado</span>
+    {% elsif product.compare_at_price > product.price %}<span class="absolute top-2 left-2 bg-[#FFE5E7] text-[#D9534F] text-[10px] px-2 py-0.5 rounded-full uppercase font-bold">Oferta</span>
+    {% else %}<span class="absolute top-2 left-2 bg-[#8DE4C5] text-[#207255] text-[10px] px-2 py-0.5 rounded-full uppercase font-bold">Disponible</span>{% endif %}
+    <button class="wishlist-btn absolute top-2 right-2 w-7 h-7 rounded-full bg-white/90 border border-[#F0E7DE] flex items-center justify-center text-[#7A736E] transition-colors" data-wish-id="{{ product.id }}" data-wish-title="{{ product.title | escape }}" data-wish-price="{{ product.price }}" data-wish-variant="{{ product.selected_or_first_available_variant.id }}" data-wish-img="{{ product.featured_image | image_url: width: 200 }}" data-wish-url="{{ product.url }}" onclick="toggleWishlist(this)" type="button"><span class="material-symbols-outlined text-[16px]">favorite</span></button>
+  </div>
+  <div class="flex flex-col gap-1 mt-2 px-1">
+    <span class="text-[11px] text-[#7A736E] uppercase font-semibold">{{ product.type | default: product.vendor }}</span>
+    <a href="{{ product.url }}"><h3 class="text-[15px] leading-tight text-[#5C4033] font-bold line-clamp-2 min-h-[38px]">{{ product.title }}</h3></a>
+    <div class="flex flex-wrap items-baseline justify-between gap-x-2 mt-1">
+      <span class="text-[20px] font-extrabold {% if product.available %}text-[#333]{% else %}text-[#7A736E]{% endif %}">{{ product.price | money }}</span>
+      {% if product.compare_at_price > product.price %}<span class="text-xs text-[#7A736E] line-through">{{ product.compare_at_price | money }}</span>{% endif %}
+    </div>
+    {% if product.available %}
+      <button class="w-full mt-2 bg-[#8DE4C5] hover:bg-[#A8E6CF] text-[#207255] text-xs py-2 rounded-full font-bold flex items-center justify-center gap-1 active:scale-95" data-add-to-cart="{{ product.selected_or_first_available_variant.id }}" type="button"><span class="material-symbols-outlined text-[16px]">shopping_bag</span><span>Agregar al carrito</span></button>
+    {% else %}
+      <button class="w-full mt-2 bg-[#F0EAE1] text-[#8c827a] text-xs py-2 rounded-full font-semibold cursor-not-allowed" disabled type="button">Agotado</button>
+    {% endif %}
+  </div>
+</div>

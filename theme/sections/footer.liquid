@@ -1,0 +1,38 @@
+<footer class="w-full bg-[#FDFBF7] text-[#333333] pt-16 pb-6 border-t border-[#F0E7DE]">
+  <div class="max-w-[1320px] mx-auto px-5">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-10">
+      <div class="flex flex-col gap-2">
+        <div class="flex items-center gap-2">
+          {% if settings.logo %}<img src="{{ settings.logo | image_url: width: 72 }}" alt="{{ shop.name }}" class="h-9 w-9 rounded-full object-cover"/>{% endif %}
+          <span class="text-lg text-[#5C4033] font-extrabold">{{ shop.name }}</span>
+        </div>
+        <p class="text-sm text-[#5C4033]/80 font-medium">{{ settings.footer_about }}</p>
+      </div>
+      <div class="flex flex-col gap-2">
+        <h4 class="text-lg text-[#5C4033] font-extrabold">Tienda &amp; Horarios</h4>
+        <p class="text-sm text-[#5C4033]/80 font-medium">{{ settings.store_address }}</p>
+        <p class="text-sm text-[#5C4033]/80 font-medium">{{ settings.store_hours }}</p>
+      </div>
+      <div class="flex flex-col gap-2">
+        <h4 class="text-lg text-[#5C4033] font-extrabold">Atención al Cliente</h4>
+        <div class="flex flex-col gap-1 text-sm text-[#5C4033]/80 font-medium">
+          {% if shop.terms_of_service %}<a class="hover:text-[#E87373]" href="{{ shop.terms_of_service.url }}">Términos del servicio</a>{% endif %}
+          {% if shop.shipping_policy %}<a class="hover:text-[#E87373]" href="{{ shop.shipping_policy.url }}">Política de envío</a>{% endif %}
+          {% if shop.refund_policy %}<a class="hover:text-[#E87373]" href="{{ shop.refund_policy.url }}">Política de reembolso</a>{% endif %}
+          {% if shop.privacy_policy %}<a class="hover:text-[#E87373]" href="{{ shop.privacy_policy.url }}">Política de privacidad</a>{% endif %}
+          <a class="hover:text-[#E87373]" href="/pages/contact">Contacto</a>
+          <a class="font-bold flex items-center gap-1 mt-1" href="https://wa.me/{{ settings.store_whatsapp }}">WhatsApp: +{{ settings.store_phone }}</a>
+        </div>
+      </div>
+      <div class="flex flex-col gap-2">
+        <h4 class="text-lg text-[#5C4033] font-extrabold">Medios de Pago</h4>
+        <p class="text-sm text-[#5C4033]/80 font-medium">Compra segura con tarjetas y transferencia.</p>
+        <div class="flex flex-wrap gap-1">{% for b in shop.enabled_payment_types %}<span class="bg-white px-2 py-1 rounded text-[11px] border border-[#F0E7DE] font-bold">{{ b }}</span>{% endfor %}</div>
+      </div>
+    </div>
+    <div class="pt-4 border-t border-[#F0E7DE] flex items-center justify-center text-xs text-[#7A736E] font-medium">
+      <p>© {{ 'now' | date: '%Y' }} {{ shop.name }}. Hecho con dulzura en Quilicura, Chile.</p>
+    </div>
+  </div>
+</footer>
+{% schema %}{ "name": "Pie de página", "settings": [] }{% endschema %}

@@ -1,0 +1,2 @@
+{ "sections": { "catalog": { "type": "collection-catalog", "settings": { "eyebrow": "Catálogo La Choli", "per_page": 24, "filter_mode": "tipos", "filter_exclude": "" } } },
+  "order": ["catalog"] }

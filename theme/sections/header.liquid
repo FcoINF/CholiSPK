@@ -1,0 +1,59 @@
+<header class="fixed top-0 left-0 right-0 z-50 bg-[#FDFBF7]/95 backdrop-blur-xl border-b border-[#F0E7DE] shadow-[0_2px_12px_rgba(92,64,51,0.06)]">
+  <div class="bg-[#FF9E9E] py-1 px-5 border-b border-[#FFB6B9]/60">
+    <div class="max-w-[1320px] mx-auto flex items-center justify-between text-[11px] font-bold tracking-wide">
+      <div class="flex items-center gap-4 overflow-x-auto whitespace-nowrap">
+        <span class="flex items-center gap-1 font-semibold"><span class="material-symbols-outlined text-[16px]">local_shipping</span><span>{{ settings.topbar_envios }}</span></span>
+        <span class="opacity-30">|</span>
+        <span class="flex items-center gap-1 font-semibold"><span class="material-symbols-outlined text-[16px]">store</span><span>{{ settings.store_address_short }}</span></span>
+        <span class="opacity-30">|</span>
+        <span class="flex items-center gap-1 font-semibold"><span class="material-symbols-outlined text-[16px]">chat</span><span>WhatsApp {{ settings.store_phone }}</span></span>
+      </div>
+      <div class="hidden md:block"><span class="bg-[#FFF3CD] px-2 py-0.5 rounded-full text-[11px] font-bold">Despachos Lun a Sáb</span></div>
+    </div>
+  </div>
+  <div class="h-20 bg-white">
+    <div class="max-w-[1320px] h-full mx-auto px-5 flex items-center justify-between gap-6">
+      <a class="flex items-center gap-2 shrink-0" href="/">
+        {% if settings.logo %}<img src="{{ settings.logo | image_url: width: 120 }}" alt="{{ shop.name }}" class="h-11 w-11 rounded-full object-cover shadow ring-1 ring-[#F0E7DE]"/>
+        {% else %}<div class="w-11 h-11 rounded-full bg-[#FFEBEB] border border-[#FFB6B9] flex items-center justify-center text-[#E87373]"><span class="material-symbols-outlined text-[26px]">bakery_dining</span></div>{% endif %}
+        <div class="flex flex-col"><span class="text-[22px] leading-7 font-bold text-[#5C4033] tracking-tight font-extrabold">La Choli</span><span class="text-[11px] text-[#E87373] uppercase tracking-widest font-bold">Sprinkles &amp; Sweet Store</span></div>
+      </a>
+      <div class="flex-1 max-w-2xl hidden md:flex items-center relative">
+        <div class="w-full flex items-center bg-[#FDFBF7] border border-[#F0E7DE] rounded-full px-4 py-1 shadow focus-within:ring-2 focus-within:ring-[#8DE4C5]">
+          <span class="material-symbols-outlined text-[#7A736E] mr-2">search</span>
+          <input id="header-search" autocomplete="off" class="w-full bg-transparent border-0 outline-none text-sm" placeholder="Buscar sprinkles, moldes, cortadores..." type="text"/>
+        </div>
+        <div id="header-suggest" class="hidden absolute top-full left-0 right-0 mt-2 bg-white border border-[#F0E7DE] rounded-2xl shadow-lg overflow-hidden z-50"></div>
+      </div>
+      <div class="flex items-center gap-4 shrink-0">
+        <button class="md:hidden p-1 text-[#5C4033] flex items-center justify-center" onclick="mToggle()" aria-label="Buscar productos" type="button"><span class="material-symbols-outlined text-[26px]">search</span></button>
+        <button class="md:hidden p-1 text-[#5C4033] flex items-center justify-center" onclick="toggleAccount(true)" aria-label="Mi cuenta" type="button"><span class="material-symbols-outlined text-[26px]">person</span></button>
+        <a class="hidden sm:flex items-center gap-1 text-[#5C4033]" href="{% if customer %}/account{% else %}/account/login{% endif %}"><span class="material-symbols-outlined text-[24px]">person</span><span class="text-xs font-bold">{% if customer %}{{ customer.first_name }}{% else %}Mi Cuenta{% endif %}</span></a>
+        <a class="relative p-1 text-[#5C4033] flex items-center justify-center" href="/pages/favoritos"><span class="material-symbols-outlined text-[26px]">favorite</span><span data-fav-count class="absolute top-0 right-0 min-w-4 h-4 px-0.5 bg-[#FF9E9E] text-white rounded-full text-[10px] font-bold items-center justify-center" style="display:none">0</span></a>
+        <button id="bag-btn" onclick="toggleCart(true)" class="w-11 h-11 relative hidden md:flex items-center justify-center bg-[#8DE4C5] hover:bg-[#A8E6CF] rounded-full text-[#207255] shadow-sm border border-[#A8E6CF]/50" type="button" aria-label="Abrir bolsa"><span class="material-symbols-outlined text-[24px]">shopping_bag</span></button>
+      </div>
+    </div>
+  </div>
+  <div id="m-search-row" class="hidden md:hidden border-t border-[#F0E7DE] bg-white px-5 py-1">
+    <div class="relative">
+      <div class="flex items-center bg-[#FDFBF7] border border-[#F0E7DE] rounded-full px-4 py-1">
+        <span class="material-symbols-outlined text-[#7A736E] mr-2">search</span>
+        <input id="m-search" autocomplete="off" class="w-full bg-transparent border-0 outline-none text-sm" placeholder="Buscar productos..." type="text"/>
+        <button class="text-[#7A736E] pl-1" onclick="mToggle(false)" aria-label="Cerrar búsqueda" type="button"><span class="material-symbols-outlined text-[20px]">close</span></button>
+      </div>
+      <div id="m-suggest" class="hidden absolute top-full left-0 right-0 mt-2 bg-white border border-[#F0E7DE] rounded-2xl shadow-lg overflow-hidden z-50"></div>
+    </div>
+  </div>
+  <div class="bg-[#FAF6F0] border-b border-[#F0E7DE]">
+    <div class="max-w-[1320px] mx-auto px-5">
+      <nav class="flex items-center gap-1 py-2 overflow-x-auto whitespace-nowrap">
+        {% for link in linklists['main-menu'].links %}
+          <a href="{{ link.url }}" class="text-sm text-[#5C4033] font-semibold hover:text-[#E87373] hover:bg-[#FFEBEB] rounded-full px-4 py-1.5 transition-all">{{ link.title }}</a>
+        {% endfor %}
+      </nav>
+    </div>
+  </div>
+</header>
+<button id="bag-fab" onclick="toggleCart(true)" aria-label="Abrir bolsa de compra" type="button" class="md:hidden fixed bottom-5 right-5 z-[54] w-14 h-14 rounded-full bg-[#8DE4C5] text-[#207255] shadow-xl border border-[#A8E6CF] flex items-center justify-center active:scale-95"><span class="material-symbols-outlined text-[28px]">shopping_bag</span></button>
+<a href="/pages/favoritos" aria-label="Mis favoritos" class="md:hidden fixed bottom-[92px] right-5 z-[54] w-14 h-14 rounded-full bg-white text-[#E87373] shadow-xl border border-[#F0E7DE] flex items-center justify-center active:scale-95"><span class="material-symbols-outlined text-[28px]">favorite</span></a>
+{% schema %}{ "name": "Encabezado", "settings": [] }{% endschema %}

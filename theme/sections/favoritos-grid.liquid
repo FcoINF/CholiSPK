@@ -1,0 +1,53 @@
+<section class="w-full py-10 px-5 bg-[#FDFBF7]" id="favoritos">
+<div class="max-w-[1320px] mx-auto flex flex-col gap-6">
+  <div>
+    <span class="text-[11px] text-[#E87373] uppercase tracking-widest font-bold">Tu lista dulce</span>
+    <h1 class="text-[24px] md:text-[32px] text-[#5C4033] font-extrabold">Mis Favoritos (<span id="fav-count">0</span>)</h1>
+    <p class="text-base text-[#5C4033]/80 max-w-xl font-medium">Todo lo que marcaste con el corazón, guardado en este navegador.</p>
+  </div>
+  <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4" id="fav-grid"></div>
+  <div id="fav-empty" class="bg-white border border-[#F0E7DE] rounded-2xl p-10 text-center flex flex-col items-center gap-3">
+    <div class="w-16 h-16 rounded-full bg-[#FFEBEB] text-[#E87373] flex items-center justify-center"><span class="material-symbols-outlined text-[32px]">favorite</span></div>
+    <p class="text-lg text-[#5C4033] font-bold">Aún no tienes favoritos</p>
+    <p class="text-sm text-[#7A736E] font-medium">Toca el corazón de tus productos preferidos y aparecerán aquí.</p>
+    <a class="bg-[#FF9E9E] text-sm px-6 py-2.5 rounded-full font-bold" href="/collections/all">Ver catálogo</a>
+  </div>
+</div>
+</section>
+<script>
+(function () {
+  function get() { try { return JSON.parse(localStorage.getItem('lacholi_favs') || '{}'); } catch (e) { return {}; } }
+  function money(c) { return '$' + (Number(c) / 100).toLocaleString('es-CL'); }
+  function esc(s) { return String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;'); }
+  window.favDel = function (id) {
+    const f = get();
+    delete f[id];
+    try { localStorage.setItem('lacholi_favs', JSON.stringify(f)); } catch (e) {}
+    render();
+    if (typeof syncHearts === 'function') syncHearts();
+  };
+  function render() {
+    const favs = Object.values(get());
+    const grid = document.getElementById('fav-grid');
+    const empty = document.getElementById('fav-empty');
+    document.getElementById('fav-count').innerText = favs.length;
+    if (!favs.length) { grid.innerHTML = ''; empty.style.display = ''; return; }
+    empty.style.display = 'none';
+    grid.innerHTML = favs.map(f => {
+      const btn = f.v
+        ? '<button class="w-full mt-2 bg-[#8DE4C5] text-[#207255] text-xs py-2 rounded-full font-bold flex items-center justify-center gap-1" data-add-to-cart="' + f.v + '" type="button"><span class="material-symbols-outlined text-[16px]">shopping_bag</span><span>Agregar al carrito</span></button>'
+        : '<a class="w-full mt-2 bg-[#FFF3CD] text-xs py-2 rounded-full text-center font-bold border border-[#F0E7DE]" href="' + (f.url || '/collections/all') + '">Ver producto</a>';
+      return '<div class="bg-white rounded-2xl p-2 shadow-sm border border-[#F0E7DE] flex flex-col justify-between">'
+        + '<div class="relative w-full aspect-square rounded-xl bg-[#FDFBF7] overflow-hidden flex items-center justify-center p-3 border border-[#F0E7DE]/60">'
+        + '<img loading="lazy" class="w-full h-full object-contain" alt="' + esc(f.t) + '" src="' + esc(f.img) + '"/>'
+        + '<span class="absolute top-2 left-2 bg-[#FFEBEB] text-[#E87373] border border-[#FFB6B9] text-[10px] px-2 py-0.5 rounded-full uppercase font-bold">Favorito</span>'
+        + '<button class="absolute top-2 right-2 w-7 h-7 rounded-full bg-white/90 border border-[#F0E7DE] flex items-center justify-center text-[#E87373]" onclick="favDel(' + f.id + ')" type="button" aria-label="Quitar de favoritos"><span class="material-symbols-outlined text-[16px]" style="font-variation-settings:\'FILL\' 1;">favorite</span></button>'
+        + '</div><div class="flex flex-col gap-1 mt-2 px-1">'
+        + '<h3 class="text-[15px] leading-tight font-bold line-clamp-2 min-h-[38px]">' + esc(f.t) + '</h3>'
+        + '<span class="text-[20px] font-extrabold">' + money(f.p) + '</span>' + btn + '</div></div>';
+    }).join('');
+  }
+  document.addEventListener('DOMContentLoaded', render);
+})();
+</script>
+{% schema %}{ "name": "Mis favoritos", "presets": [ { "name": "Mis favoritos" } ] }{% endschema %}

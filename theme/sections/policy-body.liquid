@@ -1,0 +1,35 @@
+<section class="w-full py-10 px-5 bg-[#FDFBF7]">
+<div class="max-w-[1320px] mx-auto flex flex-col gap-6">
+  <div>
+    <span class="text-[11px] text-[#E87373] uppercase tracking-widest font-bold">La Choli · Información legal</span>
+    <h1 class="text-[24px] md:text-[32px] text-[#5C4033] font-extrabold">{{ policy.title }}</h1>
+  </div>
+  <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 items-start">
+    <div class="lg:col-span-2 bg-white border border-[#F0E7DE] rounded-2xl shadow-sm p-6 md:p-8 text-sm md:text-base text-[#5C4033]/90 font-medium flex flex-col gap-4 leading-relaxed policy-body">
+      {{ policy.body }}
+    </div>
+    <div class="flex flex-col gap-4 lg:sticky lg:top-44">
+      <div class="bg-[#FFF3CD] rounded-2xl p-6 border border-amber-200 flex flex-col gap-2">
+        <h3 class="text-[17px] text-[#5C4033] font-bold">Otras políticas</h3>
+        <div class="flex flex-col gap-1 text-sm font-semibold">
+          {% if shop.privacy_policy %}<a class="hover:text-[#E87373]" href="{{ shop.privacy_policy.url }}">Política de privacidad</a>{% endif %}
+          {% if shop.terms_of_service %}<a class="hover:text-[#E87373]" href="{{ shop.terms_of_service.url }}">Términos del servicio</a>{% endif %}
+          {% if shop.shipping_policy %}<a class="hover:text-[#E87373]" href="{{ shop.shipping_policy.url }}">Política de envío</a>{% endif %}
+          {% if shop.refund_policy %}<a class="hover:text-[#E87373]" href="{{ shop.refund_policy.url }}">Política de reembolso</a>{% endif %}
+          <a class="hover:text-[#E87373]" href="/pages/contact">Contacto</a>
+        </div>
+      </div>
+      <div class="bg-white rounded-2xl p-6 border border-[#F0E7DE] shadow-sm flex flex-col gap-2">
+        <h3 class="text-[17px] font-bold flex items-center gap-2"><span class="material-symbols-outlined text-[#207255] text-[22px]">support_agent</span>¿Dudas?</h3>
+        <a class="inline-flex items-center justify-center gap-2 bg-[#8DE4C5] text-[#207255] text-xs px-4 py-2 rounded-full font-bold" target="_blank" rel="noopener" href="https://wa.me/{{ settings.store_whatsapp }}"><span class="material-symbols-outlined text-[18px]">chat</span><span>WhatsApp</span></a>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<style>
+  .policy-body h2, .policy-body h3 { color: #5C4033; font-weight: 800; }
+  .policy-body ul { list-style: disc; padding-left: 1.25rem; display: flex; flex-direction: column; gap: .25rem; }
+  .policy-body a { color: #E87373; font-weight: 700; text-decoration: underline; }
+</style>
+{% schema %}{ "name": "Política", "presets": [ { "name": "Política" } ] }{% endschema %}

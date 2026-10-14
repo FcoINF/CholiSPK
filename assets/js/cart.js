@@ -86,7 +86,21 @@ function toggleCart(open) {
 function cartCheckout() {
   const items = Object.values(LACHOLI_CART);
   if (!items.length) return;
-  let txt = 'Hola La Choli, quiero comprar:\n';
+  const ref = 'LC-' + Date.now().toString(36).toUpperCase();
+  const now = new Date();
+  try {
+    const prev = JSON.parse(localStorage.getItem('lacholi_orders') || '[]');
+    prev.unshift({
+      ref: ref,
+      ts: now.getTime(),
+      dateStr: now.toLocaleDateString('es-CL', { day: '2-digit', month: '2-digit', year: 'numeric' }) + ' ' + now.toLocaleTimeString('es-CL', { hour: '2-digit', minute: '2-digit' }),
+      count: items.reduce((s, it) => s + it.qty, 0),
+      total: cartTotal(),
+      items: items.map(it => ({ t: it.title, q: it.qty, p: it.price }))
+    });
+    localStorage.setItem('lacholi_orders', JSON.stringify(prev.slice(0, 20)));
+  } catch (e) {}
+  let txt = 'Hola La Choli, quiero comprar (pedido ' + ref + '):\n';
   items.forEach(it => { txt += '• ' + it.qty + 'x ' + it.title + ' — ' + cartFmt(it.qty * it.price) + '\n'; });
   txt += 'Total: ' + cartFmt(cartTotal()) + '\nNombre:\nDirección de envío/retiro:';
   window.open('https://wa.me/56954076195?text=' + encodeURIComponent(txt), '_blank');

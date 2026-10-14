@@ -1,0 +1,6 @@
+{ "sections": { "hero": { "type": "hero-slider", "blocks": {
+        "halloween": { "type": "slide", "settings": { "collection": "halloween", "theme": "theme-halloween", "badge": "Temporada · Halloween 31 de Octubre", "title": "Dulce o truco: todo para tu Halloween", "subtitle": "Sprinkles, moldes de silicona, cortadores y cajitas temáticas.", "cta_text": "Ver colección Halloween" } },
+        "navidad": { "type": "slide", "settings": { "collection": "navidad", "theme": "theme-navidad", "badge": "Temporada · Navidad", "title": "La magia de Navidad en tu mesa dulce", "subtitle": "Moldes de silicona navideños, cajas metálicas y visores para alfajores.", "cta_text": "Ver colección Navidad" } },
+        "top": { "type": "slide", "settings": { "theme": "theme-claro", "badge": "Los favoritos de la tienda", "title": "El universo más dulce para tus creaciones", "subtitle": "Grageas artesanales, chocolates profesionales y cotillón para fiestas inolvidables.", "cta_text": "Explorar catálogo" } }
+      }, "block_order": ["halloween", "navidad", "top"] } },
+  "order": ["hero"] }

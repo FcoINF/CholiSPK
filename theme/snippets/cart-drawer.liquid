@@ -1,0 +1,14 @@
+<div id="cart-overlay" onclick="toggleCart(false)" class="hidden fixed inset-0 bg-[#333]/40 z-[55]"></div>
+<aside id="cart-drawer" role="dialog" aria-label="Bolsa de compra" class="fixed top-0 right-0 h-full w-[min(420px,94vw)] bg-white shadow-2xl z-[60] translate-x-full transition-transform duration-300 flex flex-col">
+  <div class="flex items-center justify-between px-6 py-4 border-b border-[#F0E7DE]">
+    <h3 class="text-[17px] text-[#5C4033] font-bold flex items-center gap-2"><span class="material-symbols-outlined text-[#E87373]">shopping_bag</span>Tu bolsa (<span id="cart-title-count">0</span>)</h3>
+    <button onclick="toggleCart(false)" type="button" aria-label="Cerrar bolsa" class="w-9 h-9 rounded-full hover:bg-[#FFEBEB] flex items-center justify-center"><span class="material-symbols-outlined">close</span></button>
+  </div>
+  <div id="cart-items" class="flex-1 overflow-y-auto px-6"></div>
+  <div id="cart-foot" class="border-t border-[#F0E7DE] px-6 py-4 flex flex-col gap-3 bg-[#FFFDF5]/60">
+    <div class="flex items-center justify-between"><span class="text-sm font-semibold">Subtotal</span><span id="cart-subtotal" class="text-[20px] font-extrabold">$0</span></div>
+    <a href="/checkout" class="w-full bg-[#8DE4C5] text-[#207255] text-sm py-3 rounded-full font-bold text-center">Finalizar compra</a>
+    <button onclick="cartCheckoutWA()" type="button" class="w-full text-center text-sm font-bold text-[#5C4033]">o pedir por WhatsApp</button>
+    <button onclick="toggleCart(false)" type="button" class="w-full text-center text-xs font-bold text-[#5C4033]">Seguir comprando</button>
+  </div>
+</aside>

@@ -1,4 +1,24 @@
 /* Mi Cuenta La Choli: modal de sesión con accesos reales + atajos locales. */
+function renderAccountOrders() {
+  const box = document.getElementById('account-orders');
+  if (!box) return;
+  let orders = [];
+  try { orders = JSON.parse(localStorage.getItem('lacholi_orders') || '[]'); } catch (e) {}
+  if (!orders.length) {
+    box.innerHTML = '<p class="font-body-sm text-body-sm text-neutral-subtle font-medium">Aún no has pedido desde esta web. Tu historial oficial está en la tienda.</p>';
+    return;
+  }
+  box.innerHTML = orders.slice(0, 10).map(function (o) {
+    const f = cartFmtLocal(o.total);
+    const ask = 'https://wa.me/56954076195?text=' + encodeURIComponent('Hola La Choli, consulto el estado de mi pedido ' + o.ref + ' del ' + o.dateStr + ' por ' + f);
+    return '<div class="bg-bone-white border border-border-soft rounded-xl p-3 flex flex-col gap-1">'
+      + '<div class="flex items-center justify-between gap-2"><span class="font-label-md text-label-md text-chocolate-brown font-extrabold">' + o.ref + '</span><span class="font-label-md text-label-md text-mint-deep font-bold">' + f + '</span></div>'
+      + '<p class="font-body-sm text-body-sm text-neutral-subtle font-medium">' + o.dateStr + ' · ' + o.count + ' producto(s) · Enviado por WhatsApp</p>'
+      + '<a class="font-label-md text-label-md text-salmon-deep font-bold hover:underline self-start" target="_blank" rel="noopener" href="' + ask + '">Consultar estado</a>'
+      + '</div>';
+  }).join('');
+}
+function cartFmtLocal(n) { return '$' + Number(n).toLocaleString('es-CL'); }
 function toggleAccount(open) {
   const m = document.getElementById('account-modal');
   const o = document.getElementById('account-overlay');
@@ -7,6 +27,7 @@ function toggleAccount(open) {
   m.classList.toggle('hidden', !show);
   o.classList.toggle('hidden', !show);
   document.body.style.overflow = show ? 'hidden' : '';
+  if (show) renderAccountOrders();
 }
 document.addEventListener('DOMContentLoaded', function () {
   if (!document.getElementById('account-modal')) {
@@ -25,7 +46,12 @@ document.addEventListener('DOMContentLoaded', function () {
       + '<p class="font-label-sm text-label-sm text-neutral-subtle uppercase font-bold tracking-widest">En esta web</p>'
       + '<a class="flex items-center gap-3 py-2 text-chocolate-brown hover:text-salmon-deep font-label-md text-label-md font-bold transition-colors" href="favoritos.html"><span class="material-symbols-outlined">favorite</span>Mis favoritos</a>'
       + '<button class="flex items-center gap-3 py-2 text-chocolate-brown hover:text-salmon-deep font-label-md text-label-md font-bold transition-colors" onclick="toggleAccount(false);toggleCart(true)" type="button"><span class="material-symbols-outlined">shopping_bag</span>Mi bolsa</button>'
+      + '<a class="flex items-center gap-3 py-2 text-chocolate-brown hover:text-salmon-deep font-label-md text-label-md font-bold transition-colors" target="_blank" rel="noopener" href="https://lacholi.cl/account"><span class="material-symbols-outlined">receipt_long</span>Mis pedidos en la tienda</a>'
       + '<a class="flex items-center gap-3 py-2 text-chocolate-brown hover:text-salmon-deep font-label-md text-label-md font-bold transition-colors" href="contacto.html"><span class="material-symbols-outlined">support_agent</span>Ayuda y contacto</a>'
+      + '</div>'
+      + '<div class="border-t border-border-soft pt-space-sm flex flex-col gap-2">'
+      + '<p class="font-label-sm text-label-sm text-neutral-subtle uppercase font-bold tracking-widest">Historial de esta web</p>'
+      + '<div id="account-orders" class="flex flex-col gap-2"></div>'
       + '</div>'
       + '<p class="font-body-sm text-body-sm text-neutral-subtle font-medium text-center">Tus favoritos y tu bolsa se guardan en este navegador.</p>'
       + '</div></div>';
