@@ -93,15 +93,14 @@ function cartCheckout() {
 }
 
 function renderCart() {
-  const btn = document.getElementById('bag-btn');
-  if (btn) {
-    let badge = document.getElementById('cart-count');
-    const n = cartCount();
+  const n = cartCount();
+  document.querySelectorAll('#bag-btn, #bag-fab').forEach(function (btn) {
+    let badge = btn.querySelector('.cart-count-bubble');
     if (n > 0) {
       if (!badge) {
         badge = document.createElement('span');
-        badge.id = 'cart-count';
-        badge.className = 'absolute -top-1 -right-1 min-w-5 h-5 px-1 bg-salmon-deep text-white rounded-full text-[11px] font-bold flex items-center justify-center shadow';
+        badge.className = 'cart-count-bubble absolute -top-1 -right-1 min-w-5 h-5 px-1 bg-salmon-deep text-white rounded-full text-[11px] font-bold items-center justify-center shadow';
+        badge.style.display = 'flex';
         btn.appendChild(badge);
       }
       badge.innerText = n > 99 ? '99+' : n;
@@ -109,7 +108,7 @@ function renderCart() {
     } else if (badge) {
       badge.style.display = 'none';
     }
-  }
+  });
   const box = document.getElementById('cart-items');
   if (!box) return;
   const items = Object.entries(LACHOLI_CART);
