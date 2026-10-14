@@ -31,6 +31,14 @@ function catsOf(p) {
   return cats;
 }
 
+function typeLabel(p) {
+  if (p.type) return p.type;
+  if (typeof window !== 'undefined' && window.CATALOG_TAGLABEL && p.tags) {
+    const t = p.tags.find(function (x) { return String(x).toLowerCase() !== 'halloween'; });
+    if (t) return t.charAt(0).toUpperCase() + t.slice(1);
+  }
+  return 'La Choli';
+}
 function esc(s) {
   return String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 }
@@ -58,6 +66,8 @@ function matchRule(p, key) {
   const t = (p.type || '').toLowerCase().trim();
   if ((r.types || []).includes(t)) return true;
   if ((r.starts || []).some(s => t.startsWith(s))) return true;
+  const ptags = (p.tags || []).map(function (x) { return String(x).toLowerCase(); });
+  if ((r.tags || []).some(s => ptags.includes(String(s).toLowerCase()))) return true;
   const hay = norm(p.t + ' ' + (p.tags || []).join(' ') + ' ' + (p.type || ''));
   return (r.kw || []).some(k => hay.includes(norm(k)));
 }
@@ -111,7 +121,7 @@ function cardHtml(p, idx) {
   const cats = catsOf(p);
   const avail = !!p.a;
   const priceTxt = p.p === 0 ? 'Consultar' : fmt(p.p);
-  const compareTxt = (p.c && p.c > p.p) ? '<span class="font-body-sm text-[11px] text-neutral-subtle line-through font-medium">' + fmt(p.c) + '</span>' : '<span class="font-body-sm text-[11px] text-neutral-subtle font-medium">' + esc(p.type || 'La Choli') + '</span>';
+  const compareTxt = (p.c && p.c > p.p) ? '<span class="font-body-sm text-[11px] text-neutral-subtle line-through font-medium">' + fmt(p.c) + '</span>' : '<span class="font-body-sm text-[11px] text-neutral-subtle font-medium">' + esc(typeLabel(p)) + '</span>';
   const btn = !avail
     ? '<button class="w-full mt-2 bg-badge-agotado-bg text-badge-agotado-text font-label-md text-label-md py-2 rounded-full cursor-not-allowed flex items-center justify-center gap-1 font-semibold" disabled type="button"><span class="material-symbols-outlined text-[16px]">do_not_disturb_on</span><span>Agotado</span></button>'
     : (p.p === 0
@@ -126,7 +136,7 @@ function cardHtml(p, idx) {
     + '<button class="wishlist-btn absolute top-2 right-2 w-7 h-7 rounded-full bg-surface-card/90 backdrop-blur-sm border border-border-soft flex items-center justify-center text-neutral-subtle hover:text-salmon-deep transition-colors" onclick="toggleWishlist(this)" type="button"><span class="material-symbols-outlined text-[16px]">favorite</span></button>'
     + '</div>'
     + '<div class="flex flex-col gap-1 mt-space-sm px-1">'
-    + '<span class="font-label-sm text-[11px] text-neutral-subtle uppercase font-semibold capitalize">' + esc(p.type || 'La Choli') + '</span>'
+    + '<span class="font-label-sm text-[11px] text-neutral-subtle uppercase font-semibold capitalize">' + esc(typeLabel(p)) + '</span>'
     + '<a href="' + productUrl(p) + '" target="_blank" rel="noopener" class="hover:text-salmon-deep transition-colors"><h3 class="font-headline-sm text-[15px] leading-tight text-chocolate-brown font-bold line-clamp-2 min-h-[38px]">' + esc(p.t) + '</h3></a>'
     + '<div class="flex flex-wrap items-baseline justify-between gap-x-2 mt-1 gap-1"><span class="font-price-headline text-price-headline ' + (avail ? 'text-charcoal-dark font-extrabold' : 'text-neutral-subtle') + '">' + priceTxt + '</span>' + compareTxt + '</div>'
     + btn
@@ -148,6 +158,7 @@ function renderCatalog() {
   const to = Math.min(start + PER_PAGE, list.length);
   document.getElementById('results-count').innerText = 'Mostrando ' + from + '–' + to + ' de ' + list.length + ' artículos';
   renderPagination(totalPages);
+  if (typeof syncHearts === 'function') { try { syncHearts(); } catch (e) {} }
 }
 
 function renderPagination(totalPages) {
