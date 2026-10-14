@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link rel="icon" type="image/png" href="assets/img/logo-la-choli.png"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{
+  "salmon-primary": "#FF9E9E",
+  "salmon-light": "#FFB6B9",
+  "salmon-subtle": "#FFEBEB",
+  "salmon-deep": "#E87373",
+  "mint-accent": "#8DE4C5",
+  "mint-light": "#A8E6CF",
+  "mint-soft": "#E3F7EE",
+  "mint-deep": "#207255",
+  "vanilla-cream": "#FFF3CD",
+  "vanilla-soft": "#FFFDF5",
+  "chocolate-brown": "#5C4033",
+  "charcoal-dark": "#333333",
+  "bone-white": "#FDFBF7",
+  "badge-oferta-bg": "#FFE5E7",
+  "badge-oferta-text": "#D9534F",
+  "secondary": "#FF8A8A",
+  "on-error": "#ffffff",
+  "surface-dim": "#f3eee8",
+  "surface-bright": "#FFFFFF",
+  "inverse-surface": "#333333",
+  "surface-container": "#F5EFE6",
+  "inverse-on-surface": "#FDFBF7",
+  "strawberry-milk": "#FFEBEB",
+  "badge-sprinkle-text": "#7C5200",
+  "on-secondary": "#ffffff",
+  "error-container": "#ffdad6",
+  "outline-variant": "#e7ded7",
+  "surface-variant": "#faedea",
+  "surface": "#FDFBF7",
+  "inverse-primary": "#FFB6B9",
+  "on-primary-fixed-variant": "#5C4033",
+  "badge-agotado-text": "#8c827a",
+  "on-secondary-fixed": "#333333",
+  "primary-fixed-dim": "#FFB6B9",
+  "cream-canvas": "#FDFBF7",
+  "surface-tint": "#FF9E9E",
+  "tertiary-fixed": "#FFF3CD",
+  "surface-card": "#FFFFFF",
+  "neutral-subtle": "#7A736E",
+  "primary-fixed": "#FFEBEB",
+  "on-tertiary-fixed-variant": "#5C4033",
+  "surface-container-low": "#FAF6F0",
+  "error": "#d9383a",
+  "on-primary-container": "#333333",
+  "on-surface": "#333333",
+  "badge-nuevo-bg": "#E3F7EE",
+  "on-secondary-container": "#333333",
+  "neutral-muted": "#5C4033",
+  "secondary-fixed": "#FFEBEB",
+  "on-tertiary-fixed": "#333333",
+  "on-secondary-fixed-variant": "#5C4033",
+  "badge-agotado-bg": "#F0EAE1",
+  "outline": "#CFC5BC",
+  "primary": "#FF9E9E",
+  "on-surface-variant": "#5C4033",
+  "on-background": "#333333",
+  "on-tertiary": "#333333",
+  "border-soft": "#F0E7DE",
+  "on-error-container": "#93000a",
+  "tertiary-container": "#FFF3CD",
+  "surface-container-highest": "#EFE6DC",
+  "on-primary": "#FFFFFF",
+  "on-primary-fixed": "#333333",
+  "secondary-container": "#FFD1D3",
+  "on-tertiary-container": "#5C4033",
+  "secondary-fixed-dim": "#FFB6B9",
+  "background": "#FDFBF7",
+  "primary-container": "#FFB6B9",
+  "tertiary": "#8DE4C5",
+  "surface-container-high": "#FFF8F0",
+  "tertiary-fixed-dim": "#A8E6CF",
+  "badge-sprinkle-bg": "#FFF3CD",
+  "badge-nuevo-text": "#1E7052",
+  "surface-container-lowest": "#ffffff"
+},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"gutter-desktop":"1.5rem","space-sm":"0.5rem",margin:"1rem","space-xs":"0.25rem",gutter:"1.25rem","space-lg":"1.5rem","space-xl":"2.5rem","margin-desktop":"3.5rem","space-xxl":"4rem","margin-tablet":"2rem","space-md":"1rem"},fontFamily:{"price-headline":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"display-hero-mobile":["Plus Jakarta Sans"],"label-lg":["Plus Jakarta Sans"],"display-hero":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"headline-lg-mobile":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"]},fontSize:{"price-headline":["20px",{lineHeight:"26px",letterSpacing:"-0.01em",fontWeight:"800"}],"body-md":["14px",{lineHeight:"20px",fontWeight:"400"}],"headline-lg":["32px",{lineHeight:"40px",letterSpacing:"-0.02em",fontWeight:"700"}],"display-hero-mobile":["32px",{lineHeight:"40px",letterSpacing:"-0.02em",fontWeight:"800"}],"label-lg":["14px",{lineHeight:"20px",letterSpacing:"0.01em",fontWeight:"600"}],"display-hero":["48px",{lineHeight:"56px",letterSpacing:"-0.03em",fontWeight:"800"}],"headline-md":["22px",{lineHeight:"28px",letterSpacing:"-0.01em",fontWeight:"700"}],"label-md":["12px",{lineHeight:"16px",letterSpacing:"0.02em",fontWeight:"600"}],"body-lg":["16px",{lineHeight:"24px",fontWeight:"400"}],"headline-lg-mobile":["24px",{lineHeight:"32px",letterSpacing:"-0.01em",fontWeight:"700"}],"body-sm":["12px",{lineHeight:"16px",fontWeight:"400"}],"label-sm":["11px",{lineHeight:"14px",letterSpacing:"0.04em",fontWeight:"700"}],"headline-sm":["18px",{lineHeight:"24px",fontWeight:"600"}]}}}};</script></head><body class="bg-surface font-body-md text-charcoal-dark antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-bone-white/95 backdrop-blur-xl border-b border-border-soft shadow-[0_2px_12px_rgba(92,64,51,0.06)]"><div class="bg-salmon-primary text-charcoal-dark font-medium py-space-xs px-gutter border-b border-salmon-light/60"><div class="max-w-[1320px] mx-auto flex items-center justify-between font-label-sm text-label-sm"><div class="flex items-center gap-space-md overflow-x-auto whitespace-nowrap"><span class="flex items-center gap-space-xs text-charcoal-dark font-semibold"><span class="material-symbols-outlined text-[16px] text-chocolate-brown">local_shipping</span><span>Envíos a todo Chile</span></span><span class="opacity-30 text-chocolate-brown">|</span><span class="flex items-center gap-space-xs text-charcoal-dark font-semibold"><span class="material-symbols-outlined text-[16px] text-chocolate-brown">store</span><span>Tienda en Av. Bernardo O'Higgins 321, Quilicura</span></span><span class="opacity-30 text-chocolate-brown">|</span><span class="flex items-center gap-space-xs text-charcoal-dark font-semibold"><span class="material-symbols-outlined text-[16px] text-chocolate-brown">chat</span><span>WhatsApp +56954076195</span></span></div><div class="hidden md:flex items-center gap-space-md"><span class="bg-vanilla-cream px-space-xs py-0.5 rounded-full text-chocolate-brown font-label-sm text-label-sm font-bold shadow-xs">Despachos Lun a Sáb</span></div></div></div><div class="h-20 bg-surface-card"><div class="max-w-[1320px] h-full mx-auto px-gutter flex items-center justify-between gap-space-lg"><a class="flex items-center gap-space-sm shrink-0" data-path="inicio" href="index.html"><img src="assets/img/logo-la-choli.png" alt="La Choli" class="h-11 w-11 rounded-full object-cover shadow-[0_2px_8px_rgba(92,64,51,0.2)] ring-1 ring-border-soft"/><div class="flex flex-col"><span class="font-headline-md text-headline-md text-chocolate-brown tracking-tight font-extrabold leading-none">La Choli</span><span class="font-label-sm text-label-sm text-salmon-deep uppercase tracking-widest font-bold">Sprinkles &amp; Sweet Store</span></div></a><div class="flex-1 max-w-2xl hidden md:flex items-center relative"><div class="w-full flex items-center bg-bone-white border border-border-soft rounded-full px-space-md py-space-xs shadow-[0_2px_8px_rgba(92,64,51,0.04)] focus-within:ring-2 focus-within:ring-mint-accent focus-within:border-mint-accent"><span class="material-symbols-outlined text-neutral-subtle mr-space-xs">search</span><input id="header-search" autocomplete="off" class="w-full bg-transparent border-0 outline-none text-charcoal-dark placeholder:text-neutral-subtle font-body-md text-body-md" placeholder="Buscar sprinkles perlados, moldes, cortadores, colorantes..." type="text" oninput="headerSuggest(this.value)" onkeydown="headerSearchKey(event)" onfocus="if(this.value.trim())headerSuggest(this.value)"/><div id="header-suggest" class="hidden absolute top-full left-0 right-0 mt-2 bg-surface-card border border-border-soft rounded-2xl shadow-lg overflow-hidden z-50"></div></div></div><div class="flex items-center gap-space-md shrink-0"><a class="hidden sm:flex items-center gap-space-xs text-chocolate-brown hover:text-salmon-deep transition-colors" data-path="mi-cuenta" href="#"><span class="material-symbols-outlined text-[24px]">person</span><div class="flex flex-col text-left"><span class="font-label-sm text-label-sm text-neutral-subtle leading-none">Hola, entra a</span><span class="font-label-md text-label-md font-bold leading-none">Mi Cuenta</span></div></a><a class="relative p-space-xs text-chocolate-brown hover:text-salmon-deep transition-colors flex items-center justify-center" data-path="favoritos" href="#"><span class="material-symbols-outlined text-[26px]">favorite</span></a><div class="relative flex items-center"><button class="w-11 h-11 flex items-center justify-center bg-mint-accent hover:bg-mint-light rounded-full transition-all text-mint-deep shadow-sm border border-mint-light/50" type="button"><span class="material-symbols-outlined text-[24px]">shopping_bag</span></button></div></div></div></div><div class="bg-surface-container-low border-b border-border-soft"><div class="max-w-[1320px] mx-auto px-gutter"><nav class="flex items-center gap-space-xs py-space-xs overflow-x-auto whitespace-nowrap" data-active-classes="text-chocolate-brown font-bold bg-vanilla-cream rounded-full"><a class="font-label-lg text-label-lg text-chocolate-brown hover:text-salmon-deep hover:bg-salmon-subtle rounded-full px-space-md py-1.5 transition-all font-semibold" data-path="inicio" href="index.html">Inicio</a><a class="font-label-lg text-label-lg text-chocolate-brown hover:text-salmon-deep hover:bg-salmon-subtle rounded-full px-space-md py-1.5 transition-all font-semibold" data-path="catalogo-completo" href="catalogo.html">Catálogo Completo</a><a class="font-label-lg text-label-lg text-chocolate-brown hover:text-salmon-deep hover:bg-salmon-subtle rounded-full px-space-md py-1.5 transition-all font-semibold" data-path="reposteria" href="reposteria.html">Repostería</a><a class="font-label-lg text-label-lg text-chocolate-brown hover:text-salmon-deep hover:bg-salmon-subtle rounded-full px-space-md py-1.5 transition-all font-semibold" data-path="cotillon-y-fiestas" href="cotillon.html">Cotillón &amp; Fiestas</a><a class="font-label-lg text-label-lg text-chocolate-brown hover:text-salmon-deep hover:bg-salmon-subtle rounded-full px-space-md py-1.5 transition-all font-semibold" data-path="novedades" href="#">Novedades</a><a class="font-label-lg text-label-lg text-chocolate-brown hover:text-salmon-deep hover:bg-salmon-subtle rounded-full px-space-md py-1.5 transition-all font-semibold" data-path="ofertas" href="#">Ofertas</a><a class="font-label-lg text-label-lg text-chocolate-brown hover:text-salmon-deep hover:bg-salmon-subtle rounded-full px-space-md py-1.5 transition-all font-semibold" data-path="contacto" href="contacto.html">Contacto</a></nav></div></div></header><main class="w-full pt-[168px] md:pt-[152px] bg-bone-white"><div class="flex flex-col w-full">
+
+
+
+<!-- Términos del Servicio -->
+<section class="w-full py-space-xl px-gutter bg-bone-white" id="politica">
+<div class="max-w-[1320px] mx-auto flex flex-col gap-space-lg">
+<div>
+<span class="font-label-sm text-label-sm text-salmon-deep uppercase tracking-widest font-bold">La Choli · Información legal</span>
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-chocolate-brown font-extrabold">Términos del Servicio</h2>
+<p class="font-body-lg text-body-lg text-chocolate-brown/80 max-w-2xl font-medium">Bienvenido a La Choli. Estos términos describen tus derechos y responsabilidades al usar nuestra tienda y sitio web, incluyendo garantías, descargos y limitación de responsabilidad. Al usar nuestros servicios aceptas estos términos y nuestra Política de Privacidad.</p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-space-lg items-start">
+<div class="lg:col-span-2 flex flex-col gap-space-sm">
+<details class="policy-acc group bg-surface-card border border-border-soft rounded-2xl shadow-xs overflow-hidden scroll-mt-44" id="term-0" open>
+<summary class="flex items-center justify-between gap-3 px-space-md py-3 cursor-pointer font-label-lg text-label-lg text-chocolate-brown font-bold list-none [&::-webkit-details-marker]:hidden">Información general<span class="material-symbols-outlined transition-transform group-open:rotate-180 text-salmon-deep shrink-0">expand_more</span></summary>
+<div class="px-space-md pb-space-md font-body-md text-body-md text-chocolate-brown/80 font-medium flex flex-col gap-2">
+<p>“Nosotros”, “nos” y “nuestro” se refieren a La Choli, que dirige esta tienda y sitio web con su información, contenido, herramientas, productos y servicios para ofrecerte una experiencia de compra selecta (los “Servicios”), con tecnología de Shopify. Si no estás de acuerdo con estos términos o con la Política de Privacidad, no uses nuestros servicios.</p>
+</div>
+</details>
+<details class="policy-acc group bg-surface-card border border-border-soft rounded-2xl shadow-xs overflow-hidden scroll-mt-44" id="term-1">
+<summary class="flex items-center justify-between gap-3 px-space-md py-3 cursor-pointer font-label-lg text-label-lg text-chocolate-brown font-bold list-none [&::-webkit-details-marker]:hidden">1. Acceso y cuenta<span class="material-symbols-outlined transition-transform group-open:rotate-180 text-salmon-deep shrink-0">expand_more</span></summary>
+<div class="px-space-md pb-space-md font-body-md text-body-md text-chocolate-brown/80 font-medium flex flex-col gap-2">
+<p>Declara tener la mayoría de edad legal en tu lugar de residencia y autorizar a tus dependientes menores a usar los servicios en tus dispositivos. Para comprar podríamos pedirte correo, facturación, pago y envío: garantiza que esa información sea correcta, actualizada y completa. Eres responsable de la seguridad de tus credenciales y de toda la actividad de tu cuenta; no puedes transferirla ni licenciarla a terceros.</p>
+</div>
+</details>
+<details class="policy-acc group bg-surface-card border border-border-soft rounded-2xl shadow-xs overflow-hidden scroll-mt-44" id="term-2">
+<summary class="flex items-center justify-between gap-3 px-space-md py-3 cursor-pointer font-label-lg text-label-lg text-chocolate-brown font-bold list-none [&::-webkit-details-marker]:hidden">2. Nuestros productos<span class="material-symbols-outlined transition-transform group-open:rotate-180 text-salmon-deep shrink-0">expand_more</span></summary>
+<div class="px-space-md pb-space-md font-body-md text-body-md text-chocolate-brown/80 font-medium flex flex-col gap-2">
+<p>Procuramos mostrar los productos con precisión, pero los colores o la apariencia pueden variar según tu dispositivo. No garantizamos que lo recibido cumpla exactamente tus expectativas o lo mostrado en pantalla. Las descripciones pueden cambiar sin aviso; podemos discontinuar productos y limitar cantidades por persona, región o jurisdicción.</p>
+</div>
+</details>
+<details class="policy-acc group bg-surface-card border border-border-soft rounded-2xl shadow-xs overflow-hidden scroll-mt-44" id="term-3">
+<summary class="flex items-center justify-between gap-3 px-space-md py-3 cursor-pointer font-label-lg text-label-lg text-chocolate-brown font-bold list-none [&::-webkit-details-marker]:hidden">3. Pedidos<span class="material-symbols-outlined transition-transform group-open:rotate-180 text-salmon-deep shrink-0">expand_more</span></summary>
+<div class="px-space-md pb-space-md font-body-md text-body-md text-chocolate-brown/80 font-medium flex flex-col gap-2">
+<p>Al pedir haces una oferta de compra: nos reservamos aceptar o rechazar a discreción, y el pedido solo existe cuando lo confirmamos tras recibir tu pago. Revisa bien antes de comprar, pues podríamos no poder cancelar tras la aceptación. Si rechazamos o cambiamos un pedido, intentaremos avisarte a tu correo, dirección o teléfono. Las devoluciones y cambios se rigen por nuestra <a class="text-salmon-deep font-bold underline" href="reembolsos.html">política de reembolso</a>. Tus compras son para uso personal o doméstico, no para reventa ni exportación comercial.</p>
+</div>
+</details>
+<details class="policy-acc group bg-surface-card border border-border-soft rounded-2xl shadow-xs overflow-hidden scroll-mt-44" id="term-4">
+<summary class="flex items-center justify-between gap-3 px-space-md py-3 cursor-pointer font-label-lg text-label-lg text-chocolate-brown font-bold list-none [&::-webkit-details-marker]:hidden">4. Precios y facturación<span class="material-symbols-outlined transition-transform group-open:rotate-180 text-salmon-deep shrink-0">expand_more</span></summary>
+<div class="px-space-md pb-space-md font-body-md text-body-md text-chocolate-brown/80 font-medium flex flex-col gap-2">
+<p>Precios, descuentos y promociones pueden cambiar sin aviso; se cobra el vigente al momento del pedido. Salvo indicación expresa, no incluyen impuestos, envío, gestión, aduana ni importación. Los precios online pueden diferir de la tienda física o de terceros. Las promociones tienen sus propios términos y prevalecen sobre estos en caso de conflicto. Debes entregar información de compra y pago veraz y mantenerla actualizada, y garantizas estar autorizado para usar el medio de pago y pagar los cargos publicados con impuestos y envíos.</p>
+</div>
+</details>
+<details class="policy-acc group bg-surface-card border border-border-soft rounded-2xl shadow-xs overflow-hidden scroll-mt-44" id="term-5">
+<summary class="flex items-center justify-between gap-3 px-space-md py-3 cursor-pointer font-label-lg text-label-lg text-chocolate-brown font-bold list-none [&::-webkit-details-marker]:hidden">5. Envío y entrega<span class="material-symbols-outlined transition-transform group-open:rotate-180 text-salmon-deep shrink-0">expand_more</span></summary>
+<div class="px-space-md pb-space-md font-body-md text-body-md text-chocolate-brown/80 font-medium flex flex-col gap-2">
+<p>No somos responsables de retrasos: los plazos son solo estimaciones sin garantía, incluidos los causados por transportistas, aduanas o fuerza mayor. Al entregar los productos a la empresa de transporte, el título y el riesgo de pérdida pasan a ti. Más detalles en nuestra <a class="text-salmon-deep font-bold underline" href="envios.html">política de envío</a>.</p>
+</div>
+</details>
+<details class="policy-acc group bg-surface-card border border-border-soft rounded-2xl shadow-xs overflow-hidden scroll-mt-44" id="term-6">
+<summary class="flex items-center justify-between gap-3 px-space-md py-3 cursor-pointer font-label-lg text-label-lg text-chocolate-brown font-bold list-none [&::-webkit-details-marker]:hidden">6. Propiedad intelectual<span class="material-symbols-outlined transition-transform group-open:rotate-180 text-salmon-deep shrink-0">expand_more</span></summary>
+<div class="px-space-md pb-space-md font-body-md text-body-md text-chocolate-brown/80 font-medium flex flex-col gap-2">
+<p>Marcas, textos, imágenes, gráficos, reseñas, videos y el diseño del sitio son propiedad de La Choli, sus afiliados o licenciantes, protegidos por propiedad intelectual. Solo puedes usar los servicios para uso personal no comercial: sin reproducir, distribuir, modificar ni republicar nada sin consentimiento escrito. Nada aquí te otorga licencias sobre patentes, marcas o derechos de La Choli, Shopify o terceros. Nuestras marcas y las de Shopify son registradas y no debes usarlas sin permiso escrito.</p>
+</div>
+</details>
+<details class="policy-acc group bg-surface-card border border-border-soft rounded-2xl shadow-xs overflow-hidden scroll-mt-44" id="term-7">
+<summary class="flex items-center justify-between gap-3 px-space-md py-3 cursor-pointer font-label-lg text-label-lg text-chocolate-brown font-bold list-none [&::-webkit-details-marker]:hidden">7. Herramientas opcionales<span class="material-symbols-outlined transition-transform group-open:rotate-180 text-salmon-deep shrink-0">expand_more</span></summary>
+<div class="px-space-md pb-space-md font-body-md text-body-md text-chocolate-brown/80 font-medium flex flex-col gap-2">
+<p>Podríamos darte acceso a herramientas de terceros que no monitoreamos ni controlamos: se entregan “tal cual” y “según disponibilidad”, sin garantías ni respaldo, y las usas bajo tu propio riesgo aceptando los términos de sus proveedores. Las futuras funciones también forman parte de los servicios y de estos términos.</p>
+</div>
+</details>
+<details class="policy-acc group bg-surface-card border border-border-soft rounded-2xl shadow-xs overflow-hidden scroll-mt-44" id="term-8">
+<summary class="flex items-center justify-between gap-3 px-space-md py-3 cursor-pointer font-label-lg text-label-lg text-chocolate-brown font-bold list-none [&::-webkit-details-marker]:hidden">8. Enlaces de terceros<span class="material-symbols-outlined transition-transform group-open:rotate-180 text-salmon-deep shrink-0">expand_more</span></summary>
+<div class="px-space-md pb-space-md font-body-md text-body-md text-chocolate-brown/80 font-medium flex flex-col gap-2">
+<p>Podemos enlazar sitios de terceros que no evaluamos: si los visitas lo haces bajo tu riesgo. No respondemos por daños derivados de tu acceso a ellos ni por tus compras en ellos; revisa sus políticas y dirige allí tus reclamos.</p>
+</div>
+</details>
+<details class="policy-acc group bg-surface-card border border-border-soft rounded-2xl shadow-xs overflow-hidden scroll-mt-44" id="term-9">
+<summary class="flex items-center justify-between gap-3 px-space-md py-3 cursor-pointer font-label-lg text-label-lg text-chocolate-brown font-bold list-none [&::-webkit-details-marker]:hidden">9. Relación con Shopify<span class="material-symbols-outlined transition-transform group-open:rotate-180 text-salmon-deep shrink-0">expand_more</span></summary>
+<div class="px-space-md pb-space-md font-body-md text-body-md text-chocolate-brown/80 font-medium flex flex-col gap-2">
+<p>Operamos con tecnología de Shopify, pero cada venta la realizas directamente con La Choli. Shopify no responde por las ventas entre tú y nosotros, incluidas lesiones, daños o pérdidas de tus compras, y lo eximes expresamente de reclamaciones relacionadas.</p>
+</div>
+</details>
+<details class="policy-acc group bg-surface-card border border-border-soft rounded-2xl shadow-xs overflow-hidden scroll-mt-44" id="term-10">
+<summary class="flex items-center justify-between gap-3 px-space-md py-3 cursor-pointer font-label-lg text-label-lg text-chocolate-brown font-bold list-none [&::-webkit-details-marker]:hidden">10. Política de privacidad<span class="material-symbols-outlined transition-transform group-open:rotate-180 text-salmon-deep shrink-0">expand_more</span></summary>
+<div class="px-space-md pb-space-md font-body-md text-body-md text-chocolate-brown/80 font-medium flex flex-col gap-2">
+<p>Tus datos se rigen por nuestra <a class="text-salmon-deep font-bold underline" href="privacidad.html">Política de privacidad</a> y en parte por la de Shopify (<a class="text-salmon-deep font-bold underline" target="_blank" rel="noopener" href="https://www.shopify.com/legal/privacy/app-users">ver aquí</a>). Al usar los servicios reconoces haberla leído. Shopify recoge y procesa datos de tu acceso y uso al estar alojados en su plataforma.</p>
+</div>
+</details>
+<details class="policy-acc group bg-surface-card border border-border-soft rounded-2xl shadow-xs overflow-hidden scroll-mt-44" id="term-11">
+<summary class="flex items-center justify-between gap-3 px-space-md py-3 cursor-pointer font-label-lg text-label-lg text-chocolate-brown font-bold list-none [&::-webkit-details-marker]:hidden">11. Comentarios<span class="material-symbols-outlined transition-transform group-open:rotate-180 text-salmon-deep shrink-0">expand_more</span></summary>
+<div class="px-space-md pb-space-md font-body-md text-body-md text-chocolate-brown/80 font-medium flex flex-col gap-2">
+<p>Si nos envías ideas, reseñas o contenido, nos otorgas licencia perpetua, mundial y libre de regalías para usarlo en cualquier medio, incluso comercialmente. Garantizas tener los derechos, haber revelado compensaciones recibidas y que tu contenido es lícito y no infringe derechos de terceros (sin difamación, obscenidad ni malware, sin suplantación). Eres el único responsable de tus comentarios; podemos moderarlos o eliminarlos a discreción sin estar obligados a ello, a pagar ni a responder.</p>
+</div>
+</details>
+<details class="policy-acc group bg-surface-card border border-border-soft rounded-2xl shadow-xs overflow-hidden scroll-mt-44" id="term-12">
+<summary class="flex items-center justify-between gap-3 px-space-md py-3 cursor-pointer font-label-lg text-label-lg text-chocolate-brown font-bold list-none [&::-webkit-details-marker]:hidden">12. Errores e inexactitudes<span class="material-symbols-outlined transition-transform group-open:rotate-180 text-salmon-deep shrink-0">expand_more</span></summary>
+<div class="px-space-md pb-space-md font-body-md text-body-md text-chocolate-brown/80 font-medium flex flex-col gap-2">
+<p>Puede haber errores tipográficos o inexactitudes en descripciones, precios, promociones, envíos o disponibilidad. Podemos corregirlos, actualizar información o cancelar pedidos en cualquier momento sin aviso, incluso tras tu compra.</p>
+</div>
+</details>
+<details class="policy-acc group bg-surface-card border border-border-soft rounded-2xl shadow-xs overflow-hidden scroll-mt-44" id="term-13">
+<summary class="flex items-center justify-between gap-3 px-space-md py-3 cursor-pointer font-label-lg text-label-lg text-chocolate-brown font-bold list-none [&::-webkit-details-marker]:hidden">13. Usos prohibidos<span class="material-symbols-outlined transition-transform group-open:rotate-180 text-salmon-deep shrink-0">expand_more</span></summary>
+<div class="px-space-md pb-space-md font-body-md text-body-md text-chocolate-brown/80 font-medium flex flex-col gap-2">
+<p>Solo fines lícitos. Prohibido: actividades ilegales o maliciosas; infringir leyes o propiedad intelectual; acosar o difamar; información falsa; spam y promociones no solicitadas; suplantación; o conductas que restrinjan el uso de otros o nos expongan a responsabilidad. Tampoco: malware; copiar o explotar los servicios; rastrear datos ajenos; phishing; bots, scraping o IA agéntica para acceder; ni vulnerar medidas de seguridad o de robots. Podemos suspender tu cuenta sin aviso ante infracciones.</p>
+</div>
+</details>
+<details class="policy-acc group bg-surface-card border border-border-soft rounded-2xl shadow-xs overflow-hidden scroll-mt-44" id="term-14">
+<summary class="flex items-center justify-between gap-3 px-space-md py-3 cursor-pointer font-label-lg text-label-lg text-chocolate-brown font-bold list-none [&::-webkit-details-marker]:hidden">14. Agentes<span class="material-symbols-outlined transition-transform group-open:rotate-180 text-salmon-deep shrink-0">expand_more</span></summary>
+<div class="px-space-md pb-space-md font-body-md text-body-md text-chocolate-brown/80 font-medium flex flex-col gap-2">
+<p>Si usas software autónomo o semiautónomo (“Agente”) para interactuar con los servicios, debe identificarse siempre como Agente en el user-agent, sin imitar humanos ni eludir CAPTCHAs o bloqueos, respondiendo con veracidad si se le pregunta si es humano u ordenador. Podemos limitar técnicamente su acceso.</p>
+</div>
+</details>
+<details class="policy-acc group bg-surface-card border border-border-soft rounded-2xl shadow-xs overflow-hidden scroll-mt-44" id="term-15">
+<summary class="flex items-center justify-between gap-3 px-space-md py-3 cursor-pointer font-label-lg text-label-lg text-chocolate-brown font-bold list-none [&::-webkit-details-marker]:hidden">15. Rescisión<span class="material-symbols-outlined transition-transform group-open:rotate-180 text-salmon-deep shrink-0">expand_more</span></summary>
+<div class="px-space-md pb-space-md font-body-md text-body-md text-chocolate-brown/80 font-medium flex flex-col gap-2">
+<p>Podemos terminar este acuerdo o tu acceso a discreción en cualquier momento sin aviso; seguirás debiendo los importes adeudados. Sobreviven: propiedad intelectual, comentarios, rescisión, garantías, limitación de responsabilidad, indemnización y demás cláusulas que por naturaleza deban perdurar.</p>
+</div>
+</details>
+<details class="policy-acc group bg-surface-card border border-border-soft rounded-2xl shadow-xs overflow-hidden scroll-mt-44" id="term-16">
+<summary class="flex items-center justify-between gap-3 px-space-md py-3 cursor-pointer font-label-lg text-label-lg text-chocolate-brown font-bold list-none [&::-webkit-details-marker]:hidden">16. Garantías<span class="material-symbols-outlined transition-transform group-open:rotate-180 text-salmon-deep shrink-0">expand_more</span></summary>
+<div class="px-space-md pb-space-md font-body-md text-body-md text-chocolate-brown/80 font-medium flex flex-col gap-2">
+<p>La información es solo referencial: no garantizamos su exactitud ni utilidad, y confías en ella bajo tu riesgo. Salvo indicación expresa, servicios y productos se entregan “tal cual” y “según disponibilidad”, sin garantías expresas o implícitas de comerciabilidad, idoneidad, durabilidad, título o no infracción. No aseguramos un uso ininterrumpido, oportuno, seguro o sin errores (algunas jurisdicciones limitan estas exenciones).</p>
+</div>
+</details>
+<details class="policy-acc group bg-surface-card border border-border-soft rounded-2xl shadow-xs overflow-hidden scroll-mt-44" id="term-17">
+<summary class="flex items-center justify-between gap-3 px-space-md py-3 cursor-pointer font-label-lg text-label-lg text-chocolate-brown font-bold list-none [&::-webkit-details-marker]:hidden">17. Limitación de responsabilidad<span class="material-symbols-outlined transition-transform group-open:rotate-180 text-salmon-deep shrink-0">expand_more</span></summary>
+<div class="px-space-md pb-space-md font-body-md text-body-md text-chocolate-brown/80 font-medium flex flex-col gap-2">
+<p>En la máxima medida legal, ni La Choli, Shopify ni sus afiliados, directivos, empleados o proveedores responderán por lesiones, pérdidas o daños directos, indirectos, incidentales o consecuentes (lucro cesante, datos, reemplazos, etc.) derivados de tu uso de los servicios o productos, aun advertidos de su posibilidad.</p>
+</div>
+</details>
+<details class="policy-acc group bg-surface-card border border-border-soft rounded-2xl shadow-xs overflow-hidden scroll-mt-44" id="term-18">
+<summary class="flex items-center justify-between gap-3 px-space-md py-3 cursor-pointer font-label-lg text-label-lg text-chocolate-brown font-bold list-none [&::-webkit-details-marker]:hidden">18. Indemnización<span class="material-symbols-outlined transition-transform group-open:rotate-180 text-salmon-deep shrink-0">expand_more</span></summary>
+<div class="px-space-md pb-space-md font-body-md text-body-md text-chocolate-brown/80 font-medium flex flex-col gap-2">
+<p>Aceptas indemnizar y defender a La Choli, Shopify y sus afiliados y proveedores ante pérdidas o reclamos de terceros (incluidos honorarios legales) por tu incumplimiento de estos términos, tu violación de leyes o derechos de terceros, o tu uso de los servicios. Te avisaremos de reclamaciones y podremos controlar su defensa a tu costo, cooperando tú con lo necesario.</p>
+</div>
+</details>
+<details class="policy-acc group bg-surface-card border border-border-soft rounded-2xl shadow-xs overflow-hidden scroll-mt-44" id="term-19">
+<summary class="flex items-center justify-between gap-3 px-space-md py-3 cursor-pointer font-label-lg text-label-lg text-chocolate-brown font-bold list-none [&::-webkit-details-marker]:hidden">19 a 23. Disposiciones finales<span class="material-symbols-outlined transition-transform group-open:rotate-180 text-salmon-deep shrink-0">expand_more</span></summary>
+<div class="px-space-md pb-space-md font-body-md text-body-md text-chocolate-brown/80 font-medium flex flex-col gap-2">
+<p><strong class="text-chocolate-brown">Discrepancia:</strong> si alguna disposición es ilegal o inaplicable, se excluye en esa medida sin afectar al resto.</p>
+<p><strong class="text-chocolate-brown">Renuncia y acuerdo completo:</strong> no ejercer un derecho no es renunciarlo; estos términos más las políticas publicadas constituyen el acuerdo total y reemplazan entendimientos previos. Las ambigüedades no se interpretan contra quien redactó.</p>
+<p><strong class="text-chocolate-brown">Cesión:</strong> no puedes ceder este acuerdo sin nuestro consentimiento escrito; nosotros sí podemos hacerlo sin avisarte.</p>
+<p><strong class="text-chocolate-brown">Ley aplicable:</strong> se rigen por los tribunales de la jurisdicción donde La Choli tiene su sede, a cuya competencia te sometes.</p>
+<p><strong class="text-chocolate-brown">Encabezados:</strong> solo referenciales, sin efecto interpretativo.</p>
+</div>
+</details>
+<details class="policy-acc group bg-surface-card border border-border-soft rounded-2xl shadow-xs overflow-hidden scroll-mt-44" id="term-24">
+<summary class="flex items-center justify-between gap-3 px-space-md py-3 cursor-pointer font-label-lg text-label-lg text-chocolate-brown font-bold list-none [&::-webkit-details-marker]:hidden">24. Cambios y contacto<span class="material-symbols-outlined transition-transform group-open:rotate-180 text-salmon-deep shrink-0">expand_more</span></summary>
+<div class="px-space-md pb-space-md font-body-md text-body-md text-chocolate-brown/80 font-medium flex flex-col gap-2">
+<p>Revisa siempre la versión vigente aquí. Podemos actualizar los términos a discreción publicándolos en el sitio; es tu responsabilidad revisarlos, y te avisaremos cambios materiales según la ley. Tu uso posterior constituye aceptación.</p>
+<p>Preguntas: <a class="text-salmon-deep font-bold" href="mailto:danavergara@hotmail.com">danavergara@hotmail.com</a> · La Choli, <a class="text-salmon-deep font-bold" href="mailto:lacholisprinkles@gmail.com">lacholisprinkles@gmail.com</a>, Av. Bernardo O'Higgins 321 local 3, Quilicura · <a class="text-salmon-deep font-bold" href="tel:+56954076195">+56954076195</a>.</p>
+</div>
+</details>
+</div>
+<div class="flex flex-col gap-space-md lg:sticky lg:top-44">
+<div class="bg-vanilla-cream rounded-2xl p-space-lg border border-amber-200 shadow-sm flex flex-col gap-space-sm">
+<h3 class="font-headline-sm text-[17px] text-chocolate-brown font-bold">Otras políticas</h3>
+<div class="flex flex-col gap-space-xs font-body-md text-body-md font-semibold">
+<a class="text-chocolate-brown hover:text-salmon-deep transition-colors" href="privacidad.html">Política de privacidad</a>
+<a class="text-chocolate-brown hover:text-salmon-deep transition-colors" href="envios.html">Política de envío</a>
+<a class="text-chocolate-brown hover:text-salmon-deep transition-colors" href="reembolsos.html">Política de reembolso</a>
+<a class="text-chocolate-brown hover:text-salmon-deep transition-colors" href="contacto.html">Contacto</a>
+</div>
+</div>
+<div class="bg-surface-card rounded-2xl p-space-lg border border-border-soft shadow-xs flex flex-col gap-2">
+<h3 class="font-headline-sm text-[17px] text-chocolate-brown font-bold flex items-center gap-2"><span class="material-symbols-outlined text-mint-deep text-[22px]">support_agent</span>¿Dudas de tus derechos?</h3>
+<p class="font-body-md text-body-md text-chocolate-brown/80 font-medium">Escríbenos y te orientamos con tu compra.</p>
+<a class="inline-flex items-center justify-center gap-2 bg-mint-accent hover:bg-mint-light text-mint-deep font-label-md text-label-md px-space-md py-2 rounded-full font-bold transition-all" href="https://wa.me/56954076195" target="_blank" rel="noopener"><span class="material-symbols-outlined text-[18px]">chat</span><span>WhatsApp</span></a>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<script>
+function contactToast(msg) {
+  const toast = document.getElementById('cart-toast');
+  const el = document.getElementById('toast-message');
+  if (el) el.innerText = msg;
+  if (!toast) return;
+  toast.classList.remove('translate-y-32');
+  setTimeout(() => { toast.classList.add('translate-y-32'); }, 3000);
+}
+function handleContactSubmit(e) {
+  e.preventDefault();
+  const n = document.getElementById('ct-nombre').value.trim();
+  const c = document.getElementById('ct-correo').value.trim();
+  const t = document.getElementById('ct-fono').value.trim();
+  const m = document.getElementById('ct-msg').value.trim();
+  if (!c) { contactToast('Ingresa tu correo electrónico para contactarte'); return false; }
+  const txt = 'Hola La Choli, soy ' + (n || 'cliente web') + ' (' + c + (t ? ', fono ' + t : '') + '). ' + (m || 'Quiero hacer una consulta.');
+  window.open('https://wa.me/56954076195?text=' + encodeURIComponent(txt), '_blank');
+  contactToast('¡Mensaje listo! Te abrimos WhatsApp para enviarlo');
+  return false;
+}
+</script>
+
+<div class="fixed bottom-6 right-6 z-50 bg-charcoal-dark text-bone-white px-space-md py-3 rounded-full shadow-2xl flex items-center gap-3 transition-transform translate-y-32 duration-300 pointer-events-none max-w-[calc(100vw-3rem)]" id="cart-toast">
+<div class="w-7 h-7 rounded-full bg-mint-accent text-mint-deep flex items-center justify-center font-bold">
+<span class="material-symbols-outlined text-[16px]">done</span>
+</div>
+<span class="font-label-md text-label-md font-bold" id="toast-message">Producto añadido al carrito</span>
+</div>
+</div>
+</main><footer class="w-full bg-bone-white text-charcoal-dark pt-space-xxl pb-space-lg border-t border-border-soft shadow-[0_-4px_24px_rgba(92,64,51,0.03)]"><div class="max-w-[1320px] mx-auto px-gutter"><div class="bg-vanilla-cream rounded-xl p-space-xl mb-space-xl flex flex-col md:flex-row items-center justify-between gap-space-lg border border-amber-200 shadow-sm"><div class="max-w-xl text-center md:text-left"><span class="bg-salmon-primary text-charcoal-dark font-label-sm text-label-sm px-space-sm py-1 rounded-full uppercase font-bold shadow-xs">Club Dulce</span><h3 class="font-headline-md text-headline-md text-chocolate-brown mt-space-xs font-extrabold">¡Suscríbete y recibe 10% OFF en tu primera compra!</h3><p class="font-body-md text-body-md text-chocolate-brown/80 mt-space-xs font-medium">Sé el primero en enterarte de la llegada de nuevos sprinkles perlados, moldes de silicona y talleres de repostería.</p></div><form class="w-full md:w-auto flex flex-col sm:flex-row gap-space-xs"><input class="bg-surface-card px-space-md py-space-sm rounded-full outline-none text-charcoal-dark font-body-md text-body-md min-w-0 w-full sm:w-auto sm:min-w-[280px] max-w-full border border-border-soft shadow-xs focus:ring-2 focus:ring-mint-accent" placeholder="Ingresa tu correo dulce..." type="email"/><button class="bg-salmon-primary hover:bg-salmon-deep text-charcoal-dark font-label-lg text-label-lg px-space-lg py-space-sm rounded-full transition-all font-bold shadow-xs active:scale-95" type="button">Obtener Cupón</button></form></div><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-xl mb-space-xl"><div class="flex flex-col gap-space-sm"><div class="flex items-center gap-space-xs"><img src="assets/img/logo-la-choli.png" alt="La Choli" class="h-9 w-9 rounded-full object-cover"/><span class="font-headline-sm text-headline-sm text-chocolate-brown font-extrabold">La Choli Sprinkles</span></div><p class="font-body-md text-body-md text-chocolate-brown/80 font-medium">Tu rincón favorito para endulzar cada celebración con insumos premium de repostería y cotillón temático en Chile.</p><div class="flex items-center gap-space-xs text-chocolate-brown pt-space-xs"><a class="w-9 h-9 rounded-full bg-surface-card hover:bg-salmon-primary hover:text-charcoal-dark flex items-center justify-center transition-colors border border-border-soft shadow-xs" href="#"><span class="material-symbols-outlined text-[20px]">photo_camera</span></a><a class="w-9 h-9 rounded-full bg-surface-card hover:bg-salmon-primary hover:text-charcoal-dark flex items-center justify-center transition-colors border border-border-soft shadow-xs" href="#"><span class="material-symbols-outlined text-[20px]">public</span></a><a class="w-9 h-9 rounded-full bg-surface-card hover:bg-mint-accent hover:text-mint-deep flex items-center justify-center transition-colors border border-border-soft shadow-xs" href="https://wa.me/56954076195"><span class="material-symbols-outlined text-[20px]">chat</span></a></div></div><div class="flex flex-col gap-space-sm"><h4 class="font-headline-sm text-headline-sm text-chocolate-brown font-extrabold">Tienda &amp; Horarios</h4><div class="flex items-start gap-space-xs text-chocolate-brown/80 font-body-md text-body-md font-medium"><span class="material-symbols-outlined text-salmon-deep text-[20px] shrink-0 mt-0.5">location_on</span><span>Av. Bernardo O'Higgins 321, Quilicura, Región Metropolitana</span></div><div class="flex items-start gap-space-xs text-chocolate-brown/80 font-body-md text-body-md font-medium"><span class="material-symbols-outlined text-salmon-deep text-[20px] shrink-0 mt-0.5">schedule</span><div><p>Lunes a Viernes: 10:00 - 19:30 hrs</p><p>Sábados: 10:30 - 15:30 hrs</p><p>Domingos y Festivos: Cerrado</p></div></div></div><div class="flex flex-col gap-space-sm"><h4 class="font-headline-sm text-headline-sm text-chocolate-brown font-extrabold">Atención al Cliente</h4><div class="flex flex-col gap-space-xs font-body-md text-body-md text-chocolate-brown/80 font-medium"><a class="hover:text-salmon-deep transition-colors" href="terminos.html">T&eacute;rminos del servicio</a><a class="hover:text-salmon-deep transition-colors" href="envios.html">Políticas de Despacho y Envíos</a><a class="hover:text-salmon-deep transition-colors" href="reembolsos.html">Cambios, Garantías y Devoluciones</a><a class="hover:text-salmon-deep transition-colors" href="terminos.html">Términos y Condiciones</a><a class="text-chocolate-brown hover:text-salmon-deep font-label-md text-label-md flex items-center gap-1 font-bold mt-1" href="https://wa.me/56954076195"><span class="material-symbols-outlined text-[18px] text-mint-deep">support_agent</span> WhatsApp: +56954076195</a></div></div><div class="flex flex-col gap-space-sm"><h4 class="font-headline-sm text-headline-sm text-chocolate-brown font-extrabold">Medios de Pago</h4><p class="font-body-md text-body-md text-chocolate-brown/80 font-medium">Paga de forma 100% segura mediante Webpay Plus, tarjetas de crédito, débito y transferencia bancaria.</p><div class="flex flex-wrap gap-space-xs"><span class="bg-surface-card px-space-sm py-1 rounded font-label-sm text-label-sm text-chocolate-brown border border-border-soft shadow-xs font-bold">WebPay Plus</span><span class="bg-surface-card px-space-sm py-1 rounded font-label-sm text-label-sm text-chocolate-brown border border-border-soft shadow-xs font-bold">RedCompra</span><span class="bg-surface-card px-space-sm py-1 rounded font-label-sm text-label-sm text-chocolate-brown border border-border-soft shadow-xs font-bold">MercadoPago</span><span class="bg-surface-card px-space-sm py-1 rounded font-label-sm text-label-sm text-chocolate-brown border border-border-soft shadow-xs font-bold">Transbank</span></div></div></div><div class="pt-space-md border-t border-border-soft flex flex-col md:flex-row items-center justify-between gap-space-sm font-body-sm text-body-sm text-neutral-subtle font-medium"><p>© 2025 La Choli Sprinkles SpA. Todos los derechos reservados. Hecho con dulzura en Quilicura, Chile.</p><div class="flex items-center gap-space-md"><a class="hover:text-salmon-deep transition-colors" href="privacidad.html">Privacidad</a><a class="hover:text-salmon-deep transition-colors" href="#">Seguridad de Compra</a><a class="hover:text-salmon-deep transition-colors" href="#">Soporte</a></div></div></div></footer><script src="assets/data/products-suggest.js"></script><script src="assets/js/header-search.js"></script></body></html>

@@ -1,0 +1,1028 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link rel="icon" type="image/png" href="assets/img/logo-la-choli.png"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{
+  "salmon-primary": "#FF9E9E",
+  "salmon-light": "#FFB6B9",
+  "salmon-subtle": "#FFEBEB",
+  "salmon-deep": "#E87373",
+  "mint-accent": "#8DE4C5",
+  "mint-light": "#A8E6CF",
+  "mint-soft": "#E3F7EE",
+  "mint-deep": "#207255",
+  "vanilla-cream": "#FFF3CD",
+  "vanilla-soft": "#FFFDF5",
+  "chocolate-brown": "#5C4033",
+  "charcoal-dark": "#333333",
+  "bone-white": "#FDFBF7",
+  "badge-oferta-bg": "#FFE5E7",
+  "badge-oferta-text": "#D9534F",
+  "secondary": "#FF8A8A",
+  "on-error": "#ffffff",
+  "surface-dim": "#f3eee8",
+  "surface-bright": "#FFFFFF",
+  "inverse-surface": "#333333",
+  "surface-container": "#F5EFE6",
+  "inverse-on-surface": "#FDFBF7",
+  "strawberry-milk": "#FFEBEB",
+  "badge-sprinkle-text": "#7C5200",
+  "on-secondary": "#ffffff",
+  "error-container": "#ffdad6",
+  "outline-variant": "#e7ded7",
+  "surface-variant": "#faedea",
+  "surface": "#FDFBF7",
+  "inverse-primary": "#FFB6B9",
+  "on-primary-fixed-variant": "#5C4033",
+  "badge-agotado-text": "#8c827a",
+  "on-secondary-fixed": "#333333",
+  "primary-fixed-dim": "#FFB6B9",
+  "cream-canvas": "#FDFBF7",
+  "surface-tint": "#FF9E9E",
+  "tertiary-fixed": "#FFF3CD",
+  "surface-card": "#FFFFFF",
+  "neutral-subtle": "#7A736E",
+  "primary-fixed": "#FFEBEB",
+  "on-tertiary-fixed-variant": "#5C4033",
+  "surface-container-low": "#FAF6F0",
+  "error": "#d9383a",
+  "on-primary-container": "#333333",
+  "on-surface": "#333333",
+  "badge-nuevo-bg": "#E3F7EE",
+  "on-secondary-container": "#333333",
+  "neutral-muted": "#5C4033",
+  "secondary-fixed": "#FFEBEB",
+  "on-tertiary-fixed": "#333333",
+  "on-secondary-fixed-variant": "#5C4033",
+  "badge-agotado-bg": "#F0EAE1",
+  "outline": "#CFC5BC",
+  "primary": "#FF9E9E",
+  "on-surface-variant": "#5C4033",
+  "on-background": "#333333",
+  "on-tertiary": "#333333",
+  "border-soft": "#F0E7DE",
+  "on-error-container": "#93000a",
+  "tertiary-container": "#FFF3CD",
+  "surface-container-highest": "#EFE6DC",
+  "on-primary": "#FFFFFF",
+  "on-primary-fixed": "#333333",
+  "secondary-container": "#FFD1D3",
+  "on-tertiary-container": "#5C4033",
+  "secondary-fixed-dim": "#FFB6B9",
+  "background": "#FDFBF7",
+  "primary-container": "#FFB6B9",
+  "tertiary": "#8DE4C5",
+  "surface-container-high": "#FFF8F0",
+  "tertiary-fixed-dim": "#A8E6CF",
+  "badge-sprinkle-bg": "#FFF3CD",
+  "badge-nuevo-text": "#1E7052",
+  "surface-container-lowest": "#ffffff"
+},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"gutter-desktop":"1.5rem","space-sm":"0.5rem",margin:"1rem","space-xs":"0.25rem",gutter:"1.25rem","space-lg":"1.5rem","space-xl":"2.5rem","margin-desktop":"3.5rem","space-xxl":"4rem","margin-tablet":"2rem","space-md":"1rem"},fontFamily:{"price-headline":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"display-hero-mobile":["Plus Jakarta Sans"],"label-lg":["Plus Jakarta Sans"],"display-hero":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"headline-lg-mobile":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"]},fontSize:{"price-headline":["20px",{lineHeight:"26px",letterSpacing:"-0.01em",fontWeight:"800"}],"body-md":["14px",{lineHeight:"20px",fontWeight:"400"}],"headline-lg":["32px",{lineHeight:"40px",letterSpacing:"-0.02em",fontWeight:"700"}],"display-hero-mobile":["32px",{lineHeight:"40px",letterSpacing:"-0.02em",fontWeight:"800"}],"label-lg":["14px",{lineHeight:"20px",letterSpacing:"0.01em",fontWeight:"600"}],"display-hero":["48px",{lineHeight:"56px",letterSpacing:"-0.03em",fontWeight:"800"}],"headline-md":["22px",{lineHeight:"28px",letterSpacing:"-0.01em",fontWeight:"700"}],"label-md":["12px",{lineHeight:"16px",letterSpacing:"0.02em",fontWeight:"600"}],"body-lg":["16px",{lineHeight:"24px",fontWeight:"400"}],"headline-lg-mobile":["24px",{lineHeight:"32px",letterSpacing:"-0.01em",fontWeight:"700"}],"body-sm":["12px",{lineHeight:"16px",fontWeight:"400"}],"label-sm":["11px",{lineHeight:"14px",letterSpacing:"0.04em",fontWeight:"700"}],"headline-sm":["18px",{lineHeight:"24px",fontWeight:"600"}]}}}};</script></head><body class="bg-surface font-body-md text-charcoal-dark antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-bone-white/95 backdrop-blur-xl border-b border-border-soft shadow-[0_2px_12px_rgba(92,64,51,0.06)]"><div class="bg-salmon-primary text-charcoal-dark font-medium py-space-xs px-gutter border-b border-salmon-light/60"><div class="max-w-[1320px] mx-auto flex items-center justify-between font-label-sm text-label-sm"><div class="flex items-center gap-space-md overflow-x-auto whitespace-nowrap"><span class="flex items-center gap-space-xs text-charcoal-dark font-semibold"><span class="material-symbols-outlined text-[16px] text-chocolate-brown">local_shipping</span><span>Envíos a todo Chile</span></span><span class="opacity-30 text-chocolate-brown">|</span><span class="flex items-center gap-space-xs text-charcoal-dark font-semibold"><span class="material-symbols-outlined text-[16px] text-chocolate-brown">store</span><span>Tienda en Av. Bernardo O'Higgins 321, Quilicura</span></span><span class="opacity-30 text-chocolate-brown">|</span><span class="flex items-center gap-space-xs text-charcoal-dark font-semibold"><span class="material-symbols-outlined text-[16px] text-chocolate-brown">chat</span><span>WhatsApp +56954076195</span></span></div><div class="hidden md:flex items-center gap-space-md"><span class="bg-vanilla-cream px-space-xs py-0.5 rounded-full text-chocolate-brown font-label-sm text-label-sm font-bold shadow-xs">Despachos Lun a Sáb</span></div></div></div><div class="h-20 bg-surface-card"><div class="max-w-[1320px] h-full mx-auto px-gutter flex items-center justify-between gap-space-lg"><a class="flex items-center gap-space-sm shrink-0" data-path="inicio" href="#"><img src="assets/img/logo-la-choli.png" alt="La Choli" class="h-11 w-11 rounded-full object-cover shadow-[0_2px_8px_rgba(92,64,51,0.2)] ring-1 ring-border-soft"/><div class="flex flex-col"><span class="font-headline-md text-headline-md text-chocolate-brown tracking-tight font-extrabold leading-none">La Choli</span><span class="font-label-sm text-label-sm text-salmon-deep uppercase tracking-widest font-bold">Sprinkles &amp; Sweet Store</span></div></a><div class="flex-1 max-w-2xl hidden md:flex items-center relative"><div class="w-full flex items-center bg-bone-white border border-border-soft rounded-full px-space-md py-space-xs shadow-[0_2px_8px_rgba(92,64,51,0.04)] focus-within:ring-2 focus-within:ring-mint-accent focus-within:border-mint-accent"><span class="material-symbols-outlined text-neutral-subtle mr-space-xs">search</span><input id="header-search" autocomplete="off" class="w-full bg-transparent border-0 outline-none text-charcoal-dark placeholder:text-neutral-subtle font-body-md text-body-md" placeholder="Buscar sprinkles perlados, moldes, cortadores, colorantes..." type="text" oninput="headerSuggest(this.value)" onkeydown="headerSearchKey(event)" onfocus="if(this.value.trim())headerSuggest(this.value)"/></div><div id="header-suggest" class="hidden absolute top-full left-0 right-0 mt-2 bg-surface-card border border-border-soft rounded-2xl shadow-lg overflow-hidden z-50"></div></div><div class="flex items-center gap-space-md shrink-0"><a class="hidden sm:flex items-center gap-space-xs text-chocolate-brown hover:text-salmon-deep transition-colors" data-path="mi-cuenta" href="#"><span class="material-symbols-outlined text-[24px]">person</span><div class="flex flex-col text-left"><span class="font-label-sm text-label-sm text-neutral-subtle leading-none">Hola, entra a</span><span class="font-label-md text-label-md font-bold leading-none">Mi Cuenta</span></div></a><a class="relative p-space-xs text-chocolate-brown hover:text-salmon-deep transition-colors flex items-center justify-center" data-path="favoritos" href="#"><span class="material-symbols-outlined text-[26px]">favorite</span></a><div class="relative flex items-center"><button class="w-11 h-11 flex items-center justify-center bg-mint-accent hover:bg-mint-light rounded-full transition-all text-mint-deep shadow-sm border border-mint-light/50" type="button"><span class="material-symbols-outlined text-[24px]">shopping_bag</span></button></div></div></div></div><div class="bg-surface-container-low border-b border-border-soft"><div class="max-w-[1320px] mx-auto px-gutter"><nav class="flex items-center gap-space-xs py-space-xs overflow-x-auto whitespace-nowrap" data-active-classes="text-chocolate-brown font-bold bg-vanilla-cream rounded-full"><a aria-current="page" class="px-space-md py-1.5 transition-all text-chocolate-brown font-extrabold bg-vanilla-cream rounded-full border border-vanilla-cream shadow-xs" data-path="inicio" href="#">Inicio</a><a class="font-label-lg text-label-lg text-chocolate-brown hover:text-salmon-deep hover:bg-salmon-subtle rounded-full px-space-md py-1.5 transition-all font-semibold" data-path="catalogo-completo" href="catalogo.html">Catálogo Completo</a><a class="font-label-lg text-label-lg text-chocolate-brown hover:text-salmon-deep hover:bg-salmon-subtle rounded-full px-space-md py-1.5 transition-all font-semibold" data-path="reposteria" href="reposteria.html">Repostería</a><a class="font-label-lg text-label-lg text-chocolate-brown hover:text-salmon-deep hover:bg-salmon-subtle rounded-full px-space-md py-1.5 transition-all font-semibold" data-path="cotillon-y-fiestas" href="cotillon.html">Cotillón &amp; Fiestas</a><a class="font-label-lg text-label-lg text-chocolate-brown hover:text-salmon-deep hover:bg-salmon-subtle rounded-full px-space-md py-1.5 transition-all font-semibold" data-path="novedades" href="#">Novedades</a><a class="font-label-lg text-label-lg text-chocolate-brown hover:text-salmon-deep hover:bg-salmon-subtle rounded-full px-space-md py-1.5 transition-all font-semibold" data-path="ofertas" href="#">Ofertas</a><a class="font-label-lg text-label-lg text-chocolate-brown hover:text-salmon-deep hover:bg-salmon-subtle rounded-full px-space-md py-1.5 transition-all font-semibold" data-path="contacto" href="contacto.html">Contacto</a></nav></div></div></header><main class="w-full pt-[168px] md:pt-[152px] bg-bone-white"><div class="flex flex-col w-full">
+<!-- Top Visual Campaign Strip (Halloween & Temporada Dulce) -->
+<section class="w-full bg-[#241228] py-space-sm px-gutter border-b border-[#3b2342]">
+<div class="max-w-[1320px] mx-auto flex flex-col lg:flex-row items-center justify-center lg:justify-between gap-space-sm text-center lg:text-left">
+<div class="flex items-center justify-center lg:justify-start gap-space-xs min-w-0 max-w-full font-label-md text-label-md">
+<span class="material-symbols-outlined text-[20px] leading-none shrink-0 text-[#FF9E4A]" style="font-variation-settings: 'FILL' 1;">skull</span>
+<span class="font-bold uppercase tracking-wider text-[#FF9E4A] whitespace-nowrap shrink-0">Temporada Especial:</span>
+<span class="text-[#FFF7E6] font-medium">🎃 Halloween 31 de Octubre • Cortadores, Sprinkles y Fondants terroríficamente dulces</span>
+</div>
+<div class="flex items-center justify-center lg:justify-end gap-space-sm font-label-sm text-label-sm shrink-0">
+<span class="inline-flex items-center gap-1 bg-surface-card px-2.5 py-1 rounded-full shadow-xs text-chocolate-brown font-bold border border-border-soft whitespace-nowrap">
+<span class="material-symbols-outlined text-[15px] leading-none shrink-0 text-mint-deep">verified</span> Tienda Quilicura Local 3
+        </span>
+<span class="inline-flex items-center gap-1 text-[#FFB066] font-semibold whitespace-nowrap">
+<span class="material-symbols-outlined text-[15px] leading-none shrink-0 text-[#FF9E4A]">bolt</span> Despachos a todo Chile
+        </span>
+</div>
+</div>
+</section>
+<!-- Hero Slider: Temporadas & Más comprados -->
+<section class="w-full bg-bone-white py-space-xl px-gutter relative overflow-hidden" id="inicio-slider" aria-roledescription="carousel" aria-label="Destacados La Choli">
+<div class="max-w-[1320px] mx-auto relative">
+<div class="overflow-hidden rounded-3xl shadow-md border border-border-soft" id="hero-viewport">
+<div class="flex items-stretch transition-transform duration-500" id="hero-track" style="transition-timing-function:cubic-bezier(0.16,1,0.3,1)">
+<!-- Slide 1: Especial Halloween -->
+<article class="w-full shrink-0 bg-[#241228] relative overflow-hidden" aria-label="Especial Halloween">
+<div class="absolute -right-16 -top-20 w-80 h-80 rounded-full bg-[#FF9E4A]/20 blur-3xl pointer-events-none"></div>
+<div class="absolute -left-16 -bottom-20 w-80 h-80 rounded-full bg-[#7C3AED]/20 blur-3xl pointer-events-none"></div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-space-lg items-center p-space-lg md:p-space-xl min-h-[480px] relative">
+<div class="flex flex-col gap-space-md text-left">
+<div class="inline-flex items-center gap-2 self-start bg-[#FF9E4A]/15 text-[#FFB066] border border-[#FF9E4A]/40 px-space-md py-1 rounded-full font-label-sm text-label-sm uppercase tracking-wider font-bold">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings:'FILL' 1;">skull</span>
+              🎃 Temporada · Halloween 31 de Octubre
+            </div>
+<h2 class="font-display-hero-mobile md:font-display-hero text-display-hero-mobile md:text-display-hero text-[#FFF7E6] tracking-tight font-extrabold leading-[1.1]">Dulce o truco:<br/>todo para tu Halloween</h2>
+<p class="font-body-lg text-body-lg text-[#FFF7E6]/80 max-w-xl font-medium">Sprinkles naranjas y negros, moldes de silicona de calabazas y fantasmas, cortadores del Extraño Mundo de Jack y cajitas para alfajores temáticas.</p>
+<div class="flex flex-wrap items-center gap-space-md pt-space-xs">
+<a class="bg-[#FF9E4A] hover:bg-[#FFB066] text-[#241228] font-label-lg text-label-lg px-space-xl py-3 rounded-full transition-all shadow-md hover:shadow-lg flex items-center gap-2 font-bold active:scale-95" target="_blank" rel="noopener" href="https://lacholi.cl/collections/halloween">
+<span>Ver colección Halloween</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+<a class="border border-[#FFB066]/50 hover:bg-[#FFB066]/10 text-[#FFB066] font-label-lg text-label-lg px-space-lg py-3 rounded-full transition-all flex items-center gap-2 font-bold" href="#catalogo" onclick="filterCategory('halloween')">
+<span class="material-symbols-outlined text-[18px]">search</span>
+<span>Filtrar en catálogo</span>
+</a>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-space-md">
+<a class="bg-surface-card rounded-2xl p-space-sm shadow-lg flex flex-col gap-1 hover:-translate-y-1 transition-transform" target="_blank" rel="noopener" href="https://lacholi.cl/products/sprinkles-halloween-mix-2">
+<div class="h-36 md:h-44 rounded-xl overflow-hidden bg-bone-white"><img class="w-full h-full object-contain" loading="eager" alt="Sprinkles Halloween mix 2" src="https://cdn.shopify.com/s/files/1/0753/3251/8026/files/SprinklesHalloweenmix2.png?v=1790285557&width=600"/></div>
+<p class="font-label-md text-label-md text-charcoal-dark font-bold px-1">Sprinkles Halloween mix 2</p>
+<span class="font-price-headline text-price-headline text-charcoal-dark font-extrabold px-1 pb-1">$3.000</span>
+</a>
+<a class="bg-surface-card rounded-2xl p-space-sm shadow-lg flex flex-col gap-1 mt-0 sm:mt-6 hover:-translate-y-1 transition-transform" target="_blank" rel="noopener" href="https://lacholi.cl/products/set-12-cortadores-de-galletas-halloween">
+<div class="h-36 md:h-44 rounded-xl overflow-hidden bg-bone-white"><img class="w-full h-full object-contain" loading="eager" alt="Set 12 cortadores de galletas Halloween" src="https://cdn.shopify.com/s/files/1/0753/3251/8026/files/sethalloween.png?v=1790630854&width=600"/></div>
+<p class="font-label-md text-label-md text-charcoal-dark font-bold px-1">Set 12 cortadores Halloween</p>
+<span class="font-price-headline text-price-headline text-charcoal-dark font-extrabold px-1 pb-1">$26.990</span>
+</a>
+</div>
+</div>
+</article>
+<!-- Slide 2: Especial Navidad -->
+<article class="w-full shrink-0 bg-gradient-to-br from-[#5C0E0E] via-[#7A1212] to-[#3D0A0A] relative overflow-hidden" aria-label="Especial Navidad">
+<div class="absolute -right-16 -top-20 w-80 h-80 rounded-full bg-[#FFD98A]/20 blur-3xl pointer-events-none"></div>
+<div class="absolute -left-16 -bottom-20 w-80 h-80 rounded-full bg-[#2D5A3D]/30 blur-3xl pointer-events-none"></div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-space-lg items-center p-space-lg md:p-space-xl min-h-[480px] relative">
+<div class="flex flex-col gap-space-md text-left">
+<div class="inline-flex items-center gap-2 self-start bg-[#FFD98A]/15 text-[#FFE3A3] border border-[#FFD98A]/40 px-space-md py-1 rounded-full font-label-sm text-label-sm uppercase tracking-wider font-bold">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings:'FILL' 1;">forest</span>
+              🎄 Temporada · Navidad
+            </div>
+<h2 class="font-display-hero-mobile md:font-display-hero text-display-hero-mobile md:text-display-hero text-[#FFF9EC] tracking-tight font-extrabold leading-[1.1]">La magia de Navidad<br/>en tu mesa dulce</h2>
+<p class="font-body-lg text-body-lg text-[#FFF9EC]/80 max-w-xl font-medium">Moldes de silicona de arbolitos, bastones y jengibre, cajas metálicas navideñas y visores para alfajores de regalo.</p>
+<div class="flex flex-wrap items-center gap-space-md pt-space-xs">
+<a class="bg-[#FFD98A] hover:bg-[#FFE9B8] text-[#5C0E0E] font-label-lg text-label-lg px-space-xl py-3 rounded-full transition-all shadow-md hover:shadow-lg flex items-center gap-2 font-bold active:scale-95" target="_blank" rel="noopener" href="https://lacholi.cl/collections/navidad">
+<span>Ver colección Navidad</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+<a class="border border-[#FFE3A3]/50 hover:bg-[#FFE3A3]/10 text-[#FFE3A3] font-label-lg text-label-lg px-space-lg py-3 rounded-full transition-all flex items-center gap-2 font-bold" href="catalogo.html">
+<span class="material-symbols-outlined text-[18px]">grid_view</span>
+<span>Todo el catálogo</span>
+</a>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-space-md">
+<a class="bg-surface-card rounded-2xl p-space-sm shadow-lg flex flex-col gap-1 hover:-translate-y-1 transition-transform" target="_blank" rel="noopener" href="https://lacholi.cl/products/molde-de-silicona-navidad-forma-de-arbol">
+<div class="h-36 md:h-44 rounded-xl overflow-hidden bg-bone-white"><img class="w-full h-full object-contain" loading="eager" alt="Molde de silicona Navidad forma de árbol" src="https://lacholi.cl/cdn/shop/files/Moldenavidenorosaenformadearbol.png?v=1791235303&width=600"/></div>
+<p class="font-label-md text-label-md text-charcoal-dark font-bold px-1">Molde Navidad árbol</p>
+<span class="font-price-headline text-price-headline text-charcoal-dark font-extrabold px-1 pb-1">$3.000</span>
+</a>
+<a class="bg-surface-card rounded-2xl p-space-sm shadow-lg flex flex-col gap-1 mt-0 sm:mt-6 hover:-translate-y-1 transition-transform" target="_blank" rel="noopener" href="https://lacholi.cl/products/caja-metalica-arbol-de-navidad-18-cm">
+<div class="h-36 md:h-44 rounded-xl overflow-hidden bg-bone-white"><img class="w-full h-full object-contain" loading="eager" alt="Caja metálica Árbol de Navidad 18 cm" src="https://lacholi.cl/cdn/shop/files/Caja_met_lica_rbol_de_Navidad_18_cm.jpg?v=1790786446&width=600"/></div>
+<p class="font-label-md text-label-md text-charcoal-dark font-bold px-1">Caja metálica árbol 18 cm</p>
+<span class="font-price-headline text-price-headline text-charcoal-dark font-extrabold px-1 pb-1">$2.990</span>
+</a>
+</div>
+</div>
+</article>
+<!-- Slide 3: Los más comprados -->
+<article class="w-full shrink-0 bg-bone-white relative overflow-hidden" aria-label="Los más comprados">
+<div class="absolute -right-20 -top-24 w-96 h-96 rounded-full bg-vanilla-cream blur-3xl opacity-60 pointer-events-none"></div>
+<div class="absolute -left-20 -bottom-24 w-96 h-96 rounded-full bg-salmon-subtle blur-3xl opacity-70 pointer-events-none"></div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-space-lg items-center p-space-lg md:p-space-xl min-h-[480px] relative">
+<div class="flex flex-col gap-space-md text-left">
+<div class="inline-flex items-center gap-2 self-start bg-salmon-subtle text-chocolate-brown border border-salmon-light/60 px-space-md py-1 rounded-full font-label-sm text-label-sm uppercase tracking-wider shadow-xs font-bold">
+<span class="material-symbols-outlined text-[16px] text-salmon-deep">local_fire_department</span>
+          Los favoritos de la tienda
+        </div>
+<h2 class="font-display-hero-mobile md:font-display-hero text-display-hero-mobile md:text-display-hero text-chocolate-brown tracking-tight font-extrabold leading-[1.1]">El universo más dulce para tus creaciones</h2>
+<p class="font-body-lg text-body-lg text-chocolate-brown/80 max-w-xl font-medium">Desde grageas artesanales y coberturas de chocolate profesionales Puratos y Ambrosoli, hasta kits de globos orgánicos para cumpleaños inolvidables.</p>
+<div class="flex flex-wrap items-center gap-space-md pt-space-xs">
+<a class="bg-salmon-primary hover:bg-salmon-deep text-charcoal-dark font-label-lg text-label-lg px-space-xl py-3 rounded-full transition-all shadow-md hover:shadow-lg flex items-center gap-2 font-bold active:scale-95" href="#catalogo">
+<span>Explorar Catálogo (888 artículos)</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+<a class="bg-vanilla-cream hover:bg-vanilla-cream/80 text-chocolate-brown font-label-lg text-label-lg px-space-lg py-3 rounded-full transition-all shadow-xs border border-border-soft flex items-center gap-2 font-bold" href="#especial-alfajores">
+<span class="material-symbols-outlined text-[18px] text-salmon-deep">cookie</span>
+<span>Todo para Alfajores</span>
+</a>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-space-sm md:gap-space-md">
+<div class="bg-surface-card rounded-2xl p-space-sm shadow-md border border-border-soft flex flex-col gap-1 hover:-translate-y-1 transition-transform">
+<div class="h-28 md:h-36 rounded-xl overflow-hidden bg-bone-white"><img class="w-full h-full object-contain" loading="eager" alt="Alambres metalizados Dorado 10cm" src="https://cdn.shopify.com/s/files/1/0753/3251/8026/files/alambremetalizadodorado.png?v=1789591034&width=600"/></div>
+<p class="font-label-md text-label-md text-charcoal-dark font-bold px-1 text-[13px] md:text-label-md">Alambres Dorado 500pcs</p>
+<span class="font-price-headline text-price-headline text-charcoal-dark font-extrabold px-1">$1.500</span>
+<button class="w-full mt-1 bg-mint-accent hover:bg-mint-light text-mint-deep font-label-md text-label-md py-2 rounded-full transition-all flex items-center justify-center gap-1 font-bold shadow-xs active:scale-95" onclick="addToCart('Alambres metalizados Dorado 10cm', 1500)" type="button"><span class="material-symbols-outlined text-[16px]">shopping_bag</span></button>
+</div>
+<div class="bg-surface-card rounded-2xl p-space-sm shadow-md border border-border-soft flex flex-col gap-1 mt-0 sm:mt-6 hover:-translate-y-1 transition-transform">
+<div class="h-28 md:h-36 rounded-xl overflow-hidden bg-bone-white"><img class="w-full h-full object-contain" loading="eager" alt="Crema para Batir Ambiante 1 litro" src="https://cdn.shopify.com/s/files/1/0753/3251/8026/files/crema_ambiante_1.webp?v=1772560679&width=600"/></div>
+<p class="font-label-md text-label-md text-charcoal-dark font-bold px-1 text-[13px] md:text-label-md">Crema Ambiante 1L</p>
+<span class="font-price-headline text-price-headline text-charcoal-dark font-extrabold px-1">$4.650</span>
+<button class="w-full mt-1 bg-mint-accent hover:bg-mint-light text-mint-deep font-label-md text-label-md py-2 rounded-full transition-all flex items-center justify-center gap-1 font-bold shadow-xs active:scale-95" onclick="addToCart('Crema para Batir Ambiante 1L', 4650)" type="button"><span class="material-symbols-outlined text-[16px]">shopping_bag</span></button>
+</div>
+<div class="bg-surface-card rounded-2xl p-space-sm shadow-md border border-border-soft flex flex-col gap-1 hover:-translate-y-1 transition-transform">
+<div class="h-28 md:h-36 rounded-xl overflow-hidden bg-bone-white"><img class="w-full h-full object-contain" loading="eager" alt="Chocolate Caravella alfajor 1 kg" src="https://cdn.shopify.com/s/files/1/0753/3251/8026/files/chocolatecaravellaalfajor.jpg?v=1769804512&width=600"/></div>
+<p class="font-label-md text-label-md text-charcoal-dark font-bold px-1 text-[13px] md:text-label-md">Caravella Alfajor 1kg</p>
+<span class="font-price-headline text-price-headline text-charcoal-dark font-extrabold px-1">$7.990</span>
+<button class="w-full mt-1 bg-mint-accent hover:bg-mint-light text-mint-deep font-label-md text-label-md py-2 rounded-full transition-all flex items-center justify-center gap-1 font-bold shadow-xs active:scale-95" onclick="addToCart('Chocolate Caravella Alfajor 1kg', 7990)" type="button"><span class="material-symbols-outlined text-[16px]">shopping_bag</span></button>
+</div>
+</div>
+</div>
+</article>
+</div>
+</div>
+<button class="hidden sm:flex absolute top-1/2 -translate-y-1/2 -left-2 lg:-left-6 w-11 h-11 rounded-full bg-surface-card/95 border border-border-soft shadow-md items-center justify-center text-chocolate-brown hover:text-salmon-deep hover:bg-vanilla-cream transition-all z-10" id="hero-prev" aria-label="Slide anterior" type="button"><span class="material-symbols-outlined text-[22px]">chevron_left</span></button>
+<button class="hidden sm:flex absolute top-1/2 -translate-y-1/2 -right-2 lg:-right-6 w-11 h-11 rounded-full bg-surface-card/95 border border-border-soft shadow-md items-center justify-center text-chocolate-brown hover:text-salmon-deep hover:bg-vanilla-cream transition-all z-10" id="hero-next" aria-label="Slide siguiente" type="button"><span class="material-symbols-outlined text-[22px]">chevron_right</span></button>
+<div class="flex items-center justify-center gap-2 pt-space-md" id="hero-dots" role="tablist" aria-label="Elegir destacado"></div>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm sm:gap-space-md pt-space-md max-w-3xl mx-auto">
+<div class="flex items-center justify-center gap-2 text-chocolate-brown">
+<span class="material-symbols-outlined text-mint-deep text-[22px] leading-none shrink-0">local_shipping</span>
+<span class="font-label-sm text-label-sm leading-tight font-semibold">Envíos rápidos a todo Chile</span>
+</div>
+<div class="flex items-center justify-center gap-2 text-chocolate-brown">
+<span class="material-symbols-outlined text-salmon-deep text-[22px] leading-none shrink-0">inventory_2</span>
+<span class="font-label-sm text-label-sm leading-tight font-semibold">Venta mayor y detalle</span>
+</div>
+<div class="flex items-center justify-center gap-2 text-chocolate-brown">
+<span class="material-symbols-outlined text-mint-deep text-[22px] leading-none shrink-0">storefront</span>
+<span class="font-label-sm text-label-sm leading-tight font-semibold">Retiro en Quilicura</span>
+</div>
+</div>
+</div>
+</section>
+<script>
+(function () {
+  const track = document.getElementById('hero-track');
+  if (!track) return;
+  const total = track.children.length;
+  const dotsBox = document.getElementById('hero-dots');
+  const viewport = document.getElementById('hero-viewport');
+  const section = document.getElementById('inicio-slider');
+  let idx = 0, timer = null;
+  const names = ['Especial Halloween', 'Especial Navidad', 'Los más comprados'];
+  function paintDots() {
+    if (!dotsBox) return;
+    let html = '';
+    for (let i = 0; i < total; i++) {
+      const on = i === idx;
+      html += '<button role="tab" aria-selected="' + (on ? 'true' : 'false') + '" aria-label="Ir a: ' + names[i] + '" onclick="heroGo(' + i + ')" type="button" class="h-2.5 rounded-full transition-all ' + (on ? 'w-7 bg-salmon-deep' : 'w-2.5 bg-outline hover:bg-salmon-light') + '"></button>';
+    }
+    dotsBox.innerHTML = html;
+  }
+  function restart() {
+    if (timer) clearInterval(timer);
+    timer = setInterval(function () { go(idx + 1); }, 6500);
+  }
+  function go(n) {
+    idx = ((n % total) + total) % total;
+    track.style.transform = 'translateX(-' + (idx * 100) + '%)';
+    paintDots();
+    restart();
+  }
+  window.heroGo = go;
+  const prev = document.getElementById('hero-prev');
+  const next = document.getElementById('hero-next');
+  if (prev) prev.addEventListener('click', function () { go(idx - 1); });
+  if (next) next.addEventListener('click', function () { go(idx + 1); });
+  if (viewport) {
+    let x0 = null;
+    viewport.addEventListener('touchstart', function (e) { x0 = e.touches[0].clientX; }, { passive: true });
+    viewport.addEventListener('touchend', function (e) {
+      if (x0 === null) return;
+      const dx = e.changedTouches[0].clientX - x0;
+      x0 = null;
+      if (Math.abs(dx) > 40) go(dx < 0 ? idx + 1 : idx - 1);
+    }, { passive: true });
+  }
+  if (section) {
+    section.addEventListener('mouseenter', function () { if (timer) clearInterval(timer); timer = null; });
+    section.addEventListener('mouseleave', function () { restart(); });
+  }
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'ArrowLeft') go(idx - 1);
+    else if (e.key === 'ArrowRight') go(idx + 1);
+  });
+  paintDots();
+  restart();
+})();
+</script>
+
+<!-- Quick Category Carousel Bar -->
+<section class="w-full bg-surface-card py-space-lg px-gutter border-y border-border-soft">
+<div class="max-w-[1320px] mx-auto flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-salmon-deep uppercase tracking-widest font-bold">Categorías Populares</span>
+<h2 class="font-headline-sm text-headline-sm text-chocolate-brown font-extrabold">Encuentra todo por sección dulce</h2>
+</div>
+<a class="text-chocolate-brown hover:text-salmon-deep font-label-md text-label-md font-bold flex items-center gap-1 transition-colors" href="catalogo.html">
+          Ver todo el catálogo <span class="material-symbols-outlined text-[16px] text-salmon-deep">chevron_right</span>
+</a>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-space-md">
+<button class="group flex flex-col items-center p-space-sm rounded-xl hover:bg-vanilla-cream/70 border border-transparent hover:border-vanilla-cream transition-all text-center" onclick="filterCategory('reposteria')" type="button">
+<div class="w-16 h-16 rounded-full bg-salmon-subtle flex items-center justify-center text-salmon-deep group-hover:bg-salmon-primary group-hover:text-charcoal-dark transition-colors shadow-xs mb-2">
+<span class="material-symbols-outlined text-[28px]">cake</span>
+</div>
+<span class="font-label-md text-label-md font-bold text-chocolate-brown group-hover:text-salmon-deep">Repostería</span>
+<span class="font-body-sm text-body-sm text-neutral-subtle">Cremas, harinas</span>
+</button>
+<button class="group flex flex-col items-center p-space-sm rounded-xl hover:bg-vanilla-cream/70 border border-transparent hover:border-vanilla-cream transition-all text-center" onclick="filterCategory('chocolates')" type="button">
+<div class="w-16 h-16 rounded-full bg-vanilla-cream flex items-center justify-center text-chocolate-brown group-hover:bg-chocolate-brown group-hover:text-bone-white transition-colors shadow-xs mb-2">
+<span class="material-symbols-outlined text-[28px]">cookie</span>
+</div>
+<span class="font-label-md text-label-md font-bold text-chocolate-brown group-hover:text-salmon-deep">Chocolates</span>
+<span class="font-body-sm text-body-sm text-neutral-subtle">Barras, chips, gotas</span>
+</button>
+<button class="group flex flex-col items-center p-space-sm rounded-xl hover:bg-vanilla-cream/70 border border-transparent hover:border-vanilla-cream transition-all text-center" onclick="filterCategory('moldes')" type="button">
+<div class="w-16 h-16 rounded-full bg-salmon-subtle flex items-center justify-center text-salmon-deep group-hover:bg-salmon-primary group-hover:text-charcoal-dark transition-colors shadow-xs mb-2">
+<span class="material-symbols-outlined text-[28px]">shapes</span>
+</div>
+<span class="font-label-md text-label-md font-bold text-chocolate-brown group-hover:text-salmon-deep">Moldes Silicona</span>
+<span class="font-body-sm text-body-sm text-neutral-subtle">Tabletas, flores</span>
+</button>
+<button class="group flex flex-col items-center p-space-sm rounded-xl hover:bg-vanilla-cream/70 border border-transparent hover:border-vanilla-cream transition-all text-center" onclick="filterCategory('sprinkles')" type="button">
+<div class="w-16 h-16 rounded-full bg-mint-soft flex items-center justify-center text-mint-deep group-hover:bg-mint-accent group-hover:text-mint-deep transition-colors shadow-xs mb-2">
+<span class="material-symbols-outlined text-[28px]">grain</span>
+</div>
+<span class="font-label-md text-label-md font-bold text-chocolate-brown group-hover:text-salmon-deep">Sprinkles &amp; Brillos</span>
+<span class="font-body-sm text-body-sm text-neutral-subtle">Fondant, glitters</span>
+</button>
+<button class="group flex flex-col items-center p-space-sm rounded-xl hover:bg-vanilla-cream/70 border border-transparent hover:border-vanilla-cream transition-all text-center" onclick="filterCategory('cotillon')" type="button">
+<div class="w-16 h-16 rounded-full bg-salmon-subtle flex items-center justify-center text-salmon-deep group-hover:bg-salmon-primary group-hover:text-charcoal-dark transition-colors shadow-xs mb-2">
+<span class="material-symbols-outlined text-[28px]">celebration</span>
+</div>
+<span class="font-label-md text-label-md font-bold text-chocolate-brown group-hover:text-salmon-deep">Cotillón &amp; Fiestas</span>
+<span class="font-body-sm text-body-sm text-neutral-subtle">Arcos globos, velas</span>
+</button>
+<button class="group flex flex-col items-center p-space-sm rounded-xl hover:bg-vanilla-cream/70 border border-transparent hover:border-vanilla-cream transition-all text-center" onclick="filterCategory('bandejas')" type="button">
+<div class="w-16 h-16 rounded-full bg-vanilla-cream flex items-center justify-center text-chocolate-brown group-hover:bg-chocolate-brown group-hover:text-bone-white transition-colors shadow-xs mb-2">
+<span class="material-symbols-outlined text-[28px]">featured_seasonal_and_gifts</span>
+</div>
+<span class="font-label-md text-label-md font-bold text-chocolate-brown group-hover:text-salmon-deep">Cajas &amp; Bandejas</span>
+<span class="font-body-sm text-body-sm text-neutral-subtle">Doradas, visor</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Interactive Catalog Section with Rich Filters -->
+<section class="w-full py-space-xl px-gutter bg-bone-white" id="catalogo">
+<div class="max-w-[1320px] mx-auto flex flex-col gap-space-lg">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div>
+<span class="font-label-sm text-label-sm text-salmon-deep uppercase tracking-widest font-bold">Catálogo Oficial La Choli</span>
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-chocolate-brown font-extrabold">Productos Disponibles y Novedades</h2>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="font-label-md text-label-md text-chocolate-brown font-semibold" id="results-count">Mostrando 12 de 755 artículos</span>
+<div class="hidden sm:flex items-center bg-surface-card border border-border-soft rounded-full p-1 shadow-xs">
+<button class="px-2.5 py-1 rounded-full text-chocolate-brown bg-vanilla-cream font-bold flex items-center" id="view-4-col" onclick="setColumns(4)" title="4 columnas" type="button">
+<span class="material-symbols-outlined text-[18px]">grid_view</span>
+</button>
+<button class="px-2.5 py-1 rounded-full text-neutral-subtle hover:text-chocolate-brown font-bold flex items-center" id="view-5-col" onclick="setColumns(5)" title="5 columnas" type="button">
+<span class="material-symbols-outlined text-[18px]">view_comfy</span>
+</button>
+</div>
+</div>
+</div>
+<div class="bg-surface-card rounded-2xl p-space-md shadow-xs border border-border-soft flex flex-col gap-space-md">
+<div class="flex items-center gap-space-xs overflow-x-auto pb-1 whitespace-nowrap scrollbar-none" id="filter-chips">
+<button class="filter-btn active bg-salmon-primary text-charcoal-dark font-label-md text-label-md px-space-md py-1.5 rounded-full transition-all font-bold shadow-xs" data-filter="all" onclick="applyFilter('all', this)" type="button">
+            Todos (755)
+          </button>
+<button class="filter-btn bg-bone-white border border-border-soft text-chocolate-brown hover:bg-salmon-subtle font-label-md text-label-md px-space-md py-1.5 rounded-full transition-all font-semibold" data-filter="stock" onclick="applyFilter('stock', this)" type="button">
+            Solo En Stock
+          </button>
+<button class="filter-btn bg-bone-white border border-border-soft text-chocolate-brown hover:bg-salmon-subtle font-label-md text-label-md px-space-md py-1.5 rounded-full transition-all font-semibold" data-filter="reposteria" onclick="applyFilter('reposteria', this)" type="button">
+            Repostería
+          </button>
+<button class="filter-btn bg-bone-white border border-border-soft text-chocolate-brown hover:bg-salmon-subtle font-label-md text-label-md px-space-md py-1.5 rounded-full transition-all font-semibold" data-filter="chocolates" onclick="applyFilter('chocolates', this)" type="button">
+            Chocolates &amp; Coberturas
+          </button>
+<button class="filter-btn bg-bone-white border border-border-soft text-chocolate-brown hover:bg-salmon-subtle font-label-md text-label-md px-space-md py-1.5 rounded-full transition-all font-semibold" data-filter="moldes" onclick="applyFilter('moldes', this)" type="button">
+            Moldes
+          </button>
+<button class="filter-btn bg-bone-white border border-border-soft text-chocolate-brown hover:bg-salmon-subtle font-label-md text-label-md px-space-md py-1.5 rounded-full transition-all font-semibold" data-filter="sprinkles" onclick="applyFilter('sprinkles', this)" type="button">
+            Sprinkles &amp; Glitters
+          </button>
+<button class="filter-btn bg-bone-white border border-border-soft text-chocolate-brown hover:bg-salmon-subtle font-label-md text-label-md px-space-md py-1.5 rounded-full transition-all font-semibold" data-filter="cotillon" onclick="applyFilter('cotillon', this)" type="button">
+            Cotillón &amp; Fiestas
+          </button>
+<button class="filter-btn bg-[#241228] text-[#FFB066] border border-[#FF9E4A]/40 font-label-md text-label-md px-space-md py-1.5 rounded-full transition-all font-bold" data-filter="halloween" onclick="applyFilter('halloween', this)" type="button">
+            🎃 Halloween
+          </button>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-space-md items-center pt-2">
+<div class="flex items-center bg-bone-white border border-border-soft rounded-full px-space-md py-2 shadow-inner focus-within:ring-2 focus-within:ring-mint-accent">
+<span class="material-symbols-outlined text-neutral-subtle mr-2 text-[18px]">search</span>
+<input class="w-full bg-transparent border-none outline-none text-charcoal-dark font-body-md text-body-md placeholder:text-neutral-subtle" id="product-search" oninput="handleSearch(this.value)" placeholder="Buscar por producto o código..." type="text"/>
+</div>
+<div class="relative">
+<select class="w-full bg-bone-white border border-border-soft appearance-none rounded-full px-space-md py-2.5 font-label-md text-label-md text-chocolate-brown font-semibold outline-none cursor-pointer focus:ring-2 focus:ring-mint-accent" id="sort-select" onchange="sortProducts(this.value)">
+<option value="featured">Ordenar: Más Populares</option>
+<option value="price-asc">Precio: Menor a Mayor</option>
+<option value="price-desc">Precio: Mayor a Menor</option>
+<option value="alpha">Nombre: A - Z</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-3 text-[18px] pointer-events-none text-chocolate-brown">expand_more</span>
+</div>
+<div class="flex flex-col px-space-xs">
+<div class="flex justify-between items-center text-label-sm font-label-sm text-chocolate-brown mb-1">
+<span class="font-semibold">Precio máx:</span>
+<span class="font-extrabold text-salmon-deep" id="price-val">$15.000</span>
+</div>
+<input class="accent-salmon-primary cursor-pointer w-full" id="price-range" max="15000" min="800" oninput="filterByPrice(this.value)" step="500" type="range" value="15000"/>
+</div>
+<div class="flex flex-wrap items-center justify-start sm:justify-end gap-space-sm min-w-0">
+<label class="flex items-center cursor-pointer gap-2 select-none">
+<input class="sr-only peer" id="stock-toggle" onchange="toggleStockOnly(this.checked)" type="checkbox"/>
+<div class="w-9 h-5 bg-border-soft peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-surface-card after:border-gray-300 after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-mint-accent relative"></div>
+<span class="font-label-sm text-label-sm text-chocolate-brown font-semibold">Ocultar agotados</span>
+</label>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-space-md" id="product-grid">
+<div class="product-card group bg-surface-card rounded-2xl p-space-sm shadow-xs border border-border-soft hover:shadow-md hover:border-salmon-light transition-all flex flex-col justify-between" data-category="reposteria cotillon" data-name="Alambres metalizados Dorado 10cm 500pcs" data-price="1500" data-stock="true">
+<div class="relative w-full aspect-square rounded-xl bg-bone-white overflow-hidden flex items-center justify-center p-3 border border-border-soft/60">
+<img class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300" data-alt="Pack of metallic shiny gold twist ties alambres metalizados dorado 10cm for bakery treat bags and party favors on clean soft studio lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAc9viMlyRgVOQxk2GYCDvwJaMpbRuFF0eDwp5-DA3S80MPl8DnY2PhtqqDRJTI0h9UmgozwIhauu5jyM4AS32LGPLa-Ulh7Sq8Dm7XTGBGkaL8dLXJtwq6RxvLgVHI7O-pLERk8vjzI6GwTP5xwJFWiWD1FFYQWv12eFCIOShQJfAPKyfLC5jZKNAye7VcDT7TyaFE9QsxQkfyxyoysunBjdwDwag6nAemKDCDKbP_HWNCYnidwRMCyw"/>
+<span class="absolute top-2 left-2 bg-mint-accent text-mint-deep font-label-sm text-[10px] px-2 py-0.5 rounded-full uppercase font-bold shadow-xs">Disponible</span>
+<button class="wishlist-btn absolute top-2 right-2 w-7 h-7 rounded-full bg-surface-card/90 backdrop-blur-sm border border-border-soft flex items-center justify-center text-neutral-subtle hover:text-salmon-deep transition-colors" onclick="toggleWishlist(this)" type="button">
+<span class="material-symbols-outlined text-[16px]">favorite</span>
+</button>
+</div>
+<div class="flex flex-col gap-1 mt-space-sm px-1">
+<span class="font-label-sm text-[11px] text-neutral-subtle uppercase font-semibold">Envoltorios &amp; Cierres</span>
+<h3 class="font-headline-sm text-[15px] leading-tight text-chocolate-brown font-bold line-clamp-2 min-h-[38px]">
+              Alambres metalizados Dorado 10cm 500pcs
+            </h3>
+<div class="flex flex-wrap items-baseline justify-between gap-x-2 mt-1">
+<span class="font-price-headline text-price-headline text-charcoal-dark font-extrabold">$1.500</span>
+<span class="font-body-sm text-[11px] text-neutral-subtle font-medium">500 un</span>
+</div>
+<button class="w-full mt-2 bg-mint-accent hover:bg-mint-light text-mint-deep font-label-md text-label-md py-2 rounded-full transition-all flex items-center justify-center gap-1 font-bold shadow-xs active:scale-95" onclick="addToCart('Alambres metalizados Dorado 10cm', 1500)" type="button">
+<span class="material-symbols-outlined text-[16px]">shopping_bag</span>
+<span>Agregar al carrito</span>
+</button>
+</div>
+</div>
+<div class="product-card group bg-surface-card rounded-2xl p-space-sm shadow-xs border border-border-soft transition-all flex flex-col justify-between opacity-75" data-category="reposteria cotillon" data-name="Alambres metalizados Morado 10cm 500pcs" data-price="1500" data-stock="false">
+<div class="relative w-full aspect-square rounded-xl bg-bone-white overflow-hidden flex items-center justify-center p-3 border border-border-soft/60">
+<img class="w-full h-full object-contain filter grayscale contrast-75" data-alt="Pack of metallic purple twist ties alambres metalizados morado 10cm arranged for pastry bags on soft studio backdrop." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYrI0MLjQZpp8MVjir9LP4q01Kszvw81okKmwz28jExsr8RXKdWX1t8tTwPJo9sWoRtfMZLeVYXgnpoPZrbcLfoFlOD_Wsqh2bfKbc6SJ6QMWKvRkfxxbNumEP_Up47xVnSFQsOmScwyNV1wOs-Umgd9oMpeG8qGnnAuWChXffvfrp0n_VAMqWfzQKp0SnfczRvgvkdVgVKj7oTR2-pPmXV1IIOjmifjrfgp54On_m3AvyUlZHgS9Djw"/>
+<span class="absolute top-2 left-2 bg-badge-agotado-bg text-badge-agotado-text font-label-sm text-[10px] px-2 py-0.5 rounded-full uppercase font-bold">Agotado</span>
+<button class="wishlist-btn absolute top-2 right-2 w-7 h-7 rounded-full bg-surface-card/90 backdrop-blur-sm border border-border-soft flex items-center justify-center text-neutral-subtle hover:text-salmon-deep transition-colors" onclick="toggleWishlist(this)" type="button">
+<span class="material-symbols-outlined text-[16px]">favorite</span>
+</button>
+</div>
+<div class="flex flex-col gap-1 mt-space-sm px-1">
+<span class="font-label-sm text-[11px] text-neutral-subtle uppercase font-semibold">Envoltorios &amp; Cierres</span>
+<h3 class="font-headline-sm text-[15px] leading-tight text-neutral-subtle font-semibold line-clamp-2 min-h-[38px]">
+              Alambres metalizados Morado 10cm 500pcs
+            </h3>
+<div class="flex flex-wrap items-baseline justify-between gap-x-2 mt-1">
+<span class="font-price-headline text-price-headline text-neutral-subtle">$1.500</span>
+<span class="font-body-sm text-[11px] text-neutral-subtle">Sin stock</span>
+</div>
+<button class="w-full mt-2 bg-badge-agotado-bg text-badge-agotado-text font-label-md text-label-md py-2 rounded-full cursor-not-allowed flex items-center justify-center gap-1 font-semibold" disabled="" type="button">
+<span class="material-symbols-outlined text-[16px]">do_not_disturb_on</span>
+<span>Agotado</span>
+</button>
+</div>
+</div>
+<div class="product-card group bg-surface-card rounded-2xl p-space-sm shadow-xs border border-border-soft hover:shadow-md hover:border-salmon-light transition-all flex flex-col justify-between" data-category="reposteria" data-name="Albumina CD12 250g para glaseados" data-price="6390" data-stock="true">
+<div class="relative w-full aspect-square rounded-xl bg-bone-white overflow-hidden flex items-center justify-center p-3 border border-border-soft/60">
+<img class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300" data-alt="Packaging pouch of Albumina CD12 250g powder for royal icing pastry decorating on clean bright kitchen bench with subtle pink shadows." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDW9tc1PFZOKGZVoqOXPi9DuA5udIXlRV_RZNfu1fFth--UYzV2ah-UODAHDF0ge_G6W_2NvGpL8u7m2j0k1gubfWHCkvYsrC3_rZKb_7TYs6J4vn7Qu7xh2_P4FIM7MPcasCXdCbK1XTPFWNIbaoxhLiAYt2LIhvvjLPaphoQGrIBrnhtUwVHTq_GRVxEvkUopEx_o0bIfzOjxhZPZFlMNtMvFToGxu9NDTWnZ2XR321ToVCaY9nIQqg"/>
+<span class="absolute top-2 left-2 bg-vanilla-cream text-badge-sprinkle-text border border-amber-200 font-label-sm text-[10px] px-2 py-0.5 rounded-full uppercase font-bold">Insumo Pro</span>
+<button class="wishlist-btn absolute top-2 right-2 w-7 h-7 rounded-full bg-surface-card/90 backdrop-blur-sm border border-border-soft flex items-center justify-center text-neutral-subtle hover:text-salmon-deep transition-colors" onclick="toggleWishlist(this)" type="button">
+<span class="material-symbols-outlined text-[16px]">favorite</span>
+</button>
+</div>
+<div class="flex flex-col gap-1 mt-space-sm px-1">
+<span class="font-label-sm text-[11px] text-neutral-subtle uppercase font-semibold">Materias Primas</span>
+<h3 class="font-headline-sm text-[15px] leading-tight text-chocolate-brown font-bold line-clamp-2 min-h-[38px]">
+              Albumina CD12 250g (Glaseados Reales)
+            </h3>
+<div class="flex flex-wrap items-baseline justify-between gap-x-2 mt-1">
+<span class="font-price-headline text-price-headline text-charcoal-dark font-extrabold">$6.390</span>
+<span class="font-body-sm text-[11px] text-mint-deep font-bold">250g Neto</span>
+</div>
+<button class="w-full mt-2 bg-mint-accent hover:bg-mint-light text-mint-deep font-label-md text-label-md py-2 rounded-full transition-all flex items-center justify-center gap-1 font-bold shadow-xs active:scale-95" onclick="addToCart('Albumina CD12 250g', 6390)" type="button">
+<span class="material-symbols-outlined text-[16px]">shopping_bag</span>
+<span>Agregar al carrito</span>
+</button>
+</div>
+</div>
+<div class="product-card group bg-surface-card rounded-2xl p-space-sm shadow-xs border border-border-soft hover:shadow-md hover:border-salmon-light transition-all flex flex-col justify-between" data-category="reposteria" data-name="Crema para Batir Ambiante 1 litro" data-price="4650" data-stock="true">
+<div class="relative w-full aspect-square rounded-xl bg-bone-white overflow-hidden flex items-center justify-center p-3 border border-border-soft/60">
+<img class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300" data-alt="Tetra pack of Puratos Ambiante whipping cream 1 liter surrounded by freshly whipped pristine white cream dollops and berries." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8vbLMSSGrlQT9RDyyrm_2YMpm9yVZadvttCNLoLrLAizOb3JFR07topUeD5F6g6ybjJczwCBMKbJB-H_lPG3ABch3Eq8SnI0cYA_YKcWqobwS2DkMO5vd6dx6epxH4XeKdFs2PX7Cs9g6bgg7n_3j57Ul7D1h5erpWd8ZjnJLYVfkT7D0eE4E3WzW0HFnRnU6WqkK7AmzSTlR5pCeLCHGMhQH0BWnwfsYX5syzmPHsGaUXDtesuoVdQ"/>
+<span class="absolute top-2 left-2 bg-salmon-subtle text-salmon-deep border border-salmon-light font-label-sm text-[10px] px-2 py-0.5 rounded-full uppercase font-bold">Más Vendido</span>
+<button class="wishlist-btn absolute top-2 right-2 w-7 h-7 rounded-full bg-surface-card/90 backdrop-blur-sm border border-border-soft flex items-center justify-center text-neutral-subtle hover:text-salmon-deep transition-colors" onclick="toggleWishlist(this)" type="button">
+<span class="material-symbols-outlined text-[16px]">favorite</span>
+</button>
+</div>
+<div class="flex flex-col gap-1 mt-space-sm px-1">
+<span class="font-label-sm text-[11px] text-neutral-subtle uppercase font-semibold">Cremas &amp; Rellenos</span>
+<h3 class="font-headline-sm text-[15px] leading-tight text-chocolate-brown font-bold line-clamp-2 min-h-[38px]">
+              Crema para Batir Ambiante 1 litro
+            </h3>
+<div class="flex flex-wrap items-baseline justify-between gap-x-2 mt-1">
+<span class="font-price-headline text-price-headline text-charcoal-dark font-extrabold">$4.650</span>
+<span class="font-body-sm text-[11px] text-neutral-subtle font-medium">Puratos</span>
+</div>
+<button class="w-full mt-2 bg-mint-accent hover:bg-mint-light text-mint-deep font-label-md text-label-md py-2 rounded-full transition-all flex items-center justify-center gap-1 font-bold shadow-xs active:scale-95" onclick="addToCart('Crema para Batir Ambiante 1L', 4650)" type="button">
+<span class="material-symbols-outlined text-[16px]">shopping_bag</span>
+<span>Agregar al carrito</span>
+</button>
+</div>
+</div>
+<div class="product-card group bg-surface-card rounded-2xl p-space-sm shadow-xs border border-border-soft hover:shadow-md hover:border-salmon-light transition-all flex flex-col justify-between" data-category="reposteria chocolates" data-name="Ambrosella ambrosoli 350 g crema de avellanas" data-price="4190" data-stock="true">
+<div class="relative w-full aspect-square rounded-xl bg-bone-white overflow-hidden flex items-center justify-center p-3 border border-border-soft/60">
+<img class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300" data-alt="Glass jar of Ambrosella Ambrosoli 350g hazelnut chocolate spread crema de avellanas with warm chocolate background and golden hazelnut accents." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCE0xFaUdsYtlliOA5KK08oiOZpvc0b3Nbii4gLOA65K4Snf5JiV5MUCcBObI7hI5zx27YBr2c0b7mekh0tKrJ9l1szJmvQPO2QcA2e96s4hJJW1xHUWccksX4gGgW1dNo59OLMpWzGGI7Y2FxQ9enzC8gx2Tc38XPyHeacHjrBknjQQlZzBpPrM0jxRtcYGdvPlMnoJ2CpL9nYN3bIBqRQy5TmOx1SYeZRb4N54JLfVOZjBDHZwaezJA"/>
+<span class="absolute top-2 left-2 bg-mint-soft text-mint-deep font-label-sm text-[10px] px-2 py-0.5 rounded-full uppercase font-bold shadow-xs">Original</span>
+<button class="wishlist-btn absolute top-2 right-2 w-7 h-7 rounded-full bg-surface-card/90 backdrop-blur-sm border border-border-soft flex items-center justify-center text-neutral-subtle hover:text-salmon-deep transition-colors" onclick="toggleWishlist(this)" type="button">
+<span class="material-symbols-outlined text-[16px]">favorite</span>
+</button>
+</div>
+<div class="flex flex-col gap-1 mt-space-sm px-1">
+<span class="font-label-sm text-[11px] text-neutral-subtle uppercase font-semibold">Rellenos Dulces</span>
+<h3 class="font-headline-sm text-[15px] leading-tight text-chocolate-brown font-bold line-clamp-2 min-h-[38px]">
+              Ambrosella Ambrosoli 350 g (Crema Avellanas)
+            </h3>
+<div class="flex flex-wrap items-baseline justify-between gap-x-2 mt-1">
+<span class="font-price-headline text-price-headline text-charcoal-dark font-extrabold">$4.190</span>
+<span class="font-body-sm text-[11px] text-neutral-subtle font-medium">350g</span>
+</div>
+<button class="w-full mt-2 bg-mint-accent hover:bg-mint-light text-mint-deep font-label-md text-label-md py-2 rounded-full transition-all flex items-center justify-center gap-1 font-bold shadow-xs active:scale-95" onclick="addToCart('Ambrosella ambrosoli 350g', 4190)" type="button">
+<span class="material-symbols-outlined text-[16px]">shopping_bag</span>
+<span>Agregar al carrito</span>
+</button>
+</div>
+</div>
+<div class="product-card group bg-surface-card rounded-2xl p-space-sm shadow-xs border border-border-soft hover:shadow-md hover:border-salmon-light transition-all flex flex-col justify-between" data-category="cotillon" data-name="Arco de globos orgánico verde con flores 82pcs" data-price="5990" data-stock="true">
+<div class="relative w-full aspect-square rounded-xl bg-bone-white overflow-hidden flex items-center justify-center p-3 border border-border-soft/60">
+<img class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300" data-alt="Chic organic balloon garland kit with sage green, eucalyptus, and white daisy flower balloons 82 pieces assembled for elegant event decor." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDeDKu6bgCD4DkGuVS9x_ghsRFzERqxIg437drXfSDSWq0DuLv102yKpV5XYS_0WnXLyfOLTlRFM_YuCHmwos2jGagSxN4SQU_b3OE7qpY9a0c8TLO2MPGILyQA2CHVZzpgEdj1U3XVWJEODF3wmRGI9pOQzn8QU_RcIlghYjUM9o1Xs5eN88KSdB9Of9OrmcXOr_OHboQsMH--iq9uW6hTxpNubDuyZJOTW6sjvLl1w1nuZRWauhSQwQ"/>
+<span class="absolute top-2 left-2 bg-vanilla-cream text-badge-sprinkle-text border border-amber-200 font-label-sm text-[10px] px-2 py-0.5 rounded-full uppercase font-bold">Cotillón Kit</span>
+<button class="wishlist-btn absolute top-2 right-2 w-7 h-7 rounded-full bg-surface-card/90 backdrop-blur-sm border border-border-soft flex items-center justify-center text-neutral-subtle hover:text-salmon-deep transition-colors" onclick="toggleWishlist(this)" type="button">
+<span class="material-symbols-outlined text-[16px]">favorite</span>
+</button>
+</div>
+<div class="flex flex-col gap-1 mt-space-sm px-1">
+<span class="font-label-sm text-[11px] text-neutral-subtle uppercase font-semibold">Kits de Fiesta</span>
+<h3 class="font-headline-sm text-[15px] leading-tight text-chocolate-brown font-bold line-clamp-2 min-h-[38px]">
+              Arco de globos orgánico verde con flores 82pcs
+            </h3>
+<div class="flex flex-wrap items-baseline justify-between gap-x-2 mt-1">
+<span class="font-price-headline text-price-headline text-charcoal-dark font-extrabold">$5.990</span>
+<span class="font-body-sm text-[11px] text-neutral-subtle font-medium">82 piezas</span>
+</div>
+<button class="w-full mt-2 bg-mint-accent hover:bg-mint-light text-mint-deep font-label-md text-label-md py-2 rounded-full transition-all flex items-center justify-center gap-1 font-bold shadow-xs active:scale-95" onclick="addToCart('Arco de globos verde 82pcs', 5990)" type="button">
+<span class="material-symbols-outlined text-[16px]">shopping_bag</span>
+<span>Agregar al carrito</span>
+</button>
+</div>
+</div>
+<div class="product-card group bg-surface-card rounded-2xl p-space-sm shadow-xs border border-border-soft hover:shadow-md hover:border-salmon-light transition-all flex flex-col justify-between" data-category="chocolates reposteria" data-name="Chocolate Caravella alfajor 1 kg" data-price="7990" data-stock="true">
+<div class="relative w-full aspect-square rounded-xl bg-bone-white overflow-hidden flex items-center justify-center p-3 border border-border-soft/60">
+<img class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300" data-alt="Block of Master Martini Caravella alfajor chocolate coating 1kg for bakeries with glossy melted dipping consistency." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyBvYx8Bl4ociXXe4aT1sR283h8RjUQSVuCauyHdNus9CaA6S5A8UT4ckrz6fdFfurNUdOu2rimE0Cbq44jMIVuGaXhsUdeKTQ9UFsUQMytE7Otjbn1csqOSvQ3NI1xXO8oo3BBpx8h5POoUsmtJ5rbzmmJCyX9PtdFCVGenyqZuiahR0t-1naI3m7_Pv2o9bPeXc6BTbqs37hAZbZFdz2KlWkWGRRz7fFOaYYFvl66PFCE3xg37d3Nw"/>
+<span class="absolute top-2 left-2 bg-salmon-subtle text-salmon-deep border border-salmon-light font-label-sm text-[10px] px-2 py-0.5 rounded-full uppercase font-bold">Especial Alfajor</span>
+<button class="wishlist-btn absolute top-2 right-2 w-7 h-7 rounded-full bg-surface-card/90 backdrop-blur-sm border border-border-soft flex items-center justify-center text-neutral-subtle hover:text-salmon-deep transition-colors" onclick="toggleWishlist(this)" type="button">
+<span class="material-symbols-outlined text-[16px]">favorite</span>
+</button>
+</div>
+<div class="flex flex-col gap-1 mt-space-sm px-1">
+<span class="font-label-sm text-[11px] text-neutral-subtle uppercase font-semibold">Chocolatería Pro</span>
+<h3 class="font-headline-sm text-[15px] leading-tight text-chocolate-brown font-bold line-clamp-2 min-h-[38px]">
+              Chocolate Caravella alfajor barra 1 kg
+            </h3>
+<div class="flex flex-wrap items-baseline justify-between gap-x-2 mt-1">
+<span class="font-price-headline text-price-headline text-charcoal-dark font-extrabold">$7.990</span>
+<span class="font-body-sm text-[11px] text-neutral-subtle font-medium">1 Kilo</span>
+</div>
+<button class="w-full mt-2 bg-mint-accent hover:bg-mint-light text-mint-deep font-label-md text-label-md py-2 rounded-full transition-all flex items-center justify-center gap-1 font-bold shadow-xs active:scale-95" onclick="addToCart('Chocolate Caravella Alfajor 1kg', 7990)" type="button">
+<span class="material-symbols-outlined text-[16px]">shopping_bag</span>
+<span>Agregar al carrito</span>
+</button>
+</div>
+</div>
+<div class="product-card group bg-surface-card rounded-2xl p-space-sm shadow-xs border border-border-soft hover:shadow-md hover:border-salmon-light transition-all flex flex-col justify-between" data-category="moldes reposteria" data-name="Molde silicona 4 cavidades con circulos" data-price="3500" data-stock="true">
+<div class="relative w-full aspect-square rounded-xl bg-bone-white overflow-hidden flex items-center justify-center p-3 border border-border-soft/60">
+<img class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300" data-alt="Pink food grade flexible silicone baking mold with 4 circular disc cavities for chocolate disks and mini cakes." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5eevprra5WXigxDAyIfEVN6NFwZ38-T7jYcCXM88OQiwHceGjItXj4VHBPTxrN4yB1G95o0gxBu0kZvs5w4Xo94h_zHTYfQd2L9iudW4akENEXtso9uZ0mrLBIBZx0naWdHx9mId1Voaokkpw4xhaVJkpDEA_Sv9McRTJWMSmWClvq7sgPgZD-1CnAEX6OwidRD9PSG5rez1IWDgdSyi9RBS0zrrK4TkY-rbXuJOGCqheMvZnjg8ifQ"/>
+<span class="absolute top-2 left-2 bg-mint-accent text-mint-deep font-label-sm text-[10px] px-2 py-0.5 rounded-full uppercase font-bold shadow-xs">Silicona</span>
+<button class="wishlist-btn absolute top-2 right-2 w-7 h-7 rounded-full bg-surface-card/90 backdrop-blur-sm border border-border-soft flex items-center justify-center text-neutral-subtle hover:text-salmon-deep transition-colors" onclick="toggleWishlist(this)" type="button">
+<span class="material-symbols-outlined text-[16px]">favorite</span>
+</button>
+</div>
+<div class="flex flex-col gap-1 mt-space-sm px-1">
+<span class="font-label-sm text-[11px] text-neutral-subtle uppercase font-semibold">Moldes de Silicona</span>
+<h3 class="font-headline-sm text-[15px] leading-tight text-chocolate-brown font-bold line-clamp-2 min-h-[38px]">
+              Molde silicona 4 cavidades con círculos
+            </h3>
+<div class="flex flex-wrap items-baseline justify-between gap-x-2 mt-1">
+<span class="font-price-headline text-price-headline text-charcoal-dark font-extrabold">$3.500</span>
+<span class="font-body-sm text-[11px] text-neutral-subtle font-medium">Horneable</span>
+</div>
+<button class="w-full mt-2 bg-mint-accent hover:bg-mint-light text-mint-deep font-label-md text-label-md py-2 rounded-full transition-all flex items-center justify-center gap-1 font-bold shadow-xs active:scale-95" onclick="addToCart('Molde silicona 4 cavidades', 3500)" type="button">
+<span class="material-symbols-outlined text-[16px]">shopping_bag</span>
+<span>Agregar al carrito</span>
+</button>
+</div>
+</div>
+<div class="product-card group bg-surface-card rounded-2xl p-space-sm shadow-xs border border-border-soft hover:shadow-md hover:border-salmon-light transition-all flex flex-col justify-between" data-category="sprinkles halloween reposteria" data-name="Palito Fondant Halloween" data-price="1900" data-stock="true">
+<div class="relative w-full aspect-square rounded-xl bg-bone-white overflow-hidden flex items-center justify-center p-3 border border-border-soft/60">
+<img class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300" data-alt="Sugar fondant sprinkle sticks palito fondant Halloween edition with orange, black and purple spooky colors for cupcakes and cookies." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkisTu0wIYXTISJ-4ODxotu_5a4O-wJZR05g88_xsozgpwbG3GLCX4gwSx2hsBhMQnIXXVoj_zWjdFEv8tVhIgnjNYd4k8Gjv-2BiGCVbtUQWdNFRftzAzKch5_sSz7TZFMi4QMl7BjH_WQhYA42_BXIAWIhHcjK5AJZSX5jhTt5Y0KsfSkEPzcdSEHJ-z8Fh8dpvKi18IkrCyrsB6AVMCuqDNUxZpZR0-0_rg_GcYOsRuAg3GsueYPQ"/>
+<span class="absolute top-2 left-2 bg-[#241228] text-[#FFB066] border border-[#FF9E4A]/40 font-label-sm text-[10px] px-2 py-0.5 rounded-full uppercase font-bold">🎃 Halloween</span>
+<button class="wishlist-btn absolute top-2 right-2 w-7 h-7 rounded-full bg-surface-card/90 backdrop-blur-sm border border-border-soft flex items-center justify-center text-neutral-subtle hover:text-salmon-deep transition-colors" onclick="toggleWishlist(this)" type="button">
+<span class="material-symbols-outlined text-[16px]">favorite</span>
+</button>
+</div>
+<div class="flex flex-col gap-1 mt-space-sm px-1">
+<span class="font-label-sm text-[11px] text-neutral-subtle uppercase font-semibold">Sprinkles Artesanales</span>
+<h3 class="font-headline-sm text-[15px] leading-tight text-chocolate-brown font-bold line-clamp-2 min-h-[38px]">
+              Palito Fondant Halloween (Naranja / Negro)
+            </h3>
+<div class="flex flex-wrap items-baseline justify-between gap-x-2 mt-1">
+<span class="font-price-headline text-price-headline text-charcoal-dark font-extrabold">$1.900</span>
+<span class="font-body-sm text-[11px] text-mint-deep font-bold">Edición Halloween</span>
+</div>
+<button class="w-full mt-2 bg-mint-accent hover:bg-mint-light text-mint-deep font-label-md text-label-md py-2 rounded-full transition-all flex items-center justify-center gap-1 font-bold shadow-xs active:scale-95" onclick="addToCart('Palito Fondant Halloween', 1900)" type="button">
+<span class="material-symbols-outlined text-[16px]">shopping_bag</span>
+<span>Agregar al carrito</span>
+</button>
+</div>
+</div>
+<div class="product-card group bg-surface-card rounded-2xl p-space-sm shadow-xs border border-border-soft hover:shadow-md hover:border-salmon-light transition-all flex flex-col justify-between" data-category="sprinkles reposteria" data-name="Glitter brillo Gold Star Chemical 5grs" data-price="4500" data-stock="true">
+<div class="relative w-full aspect-square rounded-xl bg-bone-white overflow-hidden flex items-center justify-center p-3 border border-border-soft/60">
+<img class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300" data-alt="Small jar of edible high-shimmer gold glitter dust brillo Gold Star Chemical 5 grams for cake pops and chocolates." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0mDRDT7sy3i_upitPYgbUNjZFNrQOjC3XzK51J0e3WkYVt_6nVTcdDzkJEAO1XUY01BFQWh55DAffhXndQai8owkuZTwutSsZYLhHN6GSxWctRmWbMt34EQQF3p_ABPhdE5pO2Xl5iUMeqAfqUfbmyeqDTlZqKUgZMjR781CKohoAmFQScruxm0Te4A-4ik0r-GumJ9L54pSNsG9bOXWwQj5wguSgSg2Ng8WfEDBz7xghhk_AXWZohw"/>
+<span class="absolute top-2 left-2 bg-vanilla-cream text-badge-sprinkle-text border border-amber-200 font-label-sm text-[10px] px-2 py-0.5 rounded-full uppercase font-bold">Glitter Comestible</span>
+<button class="wishlist-btn absolute top-2 right-2 w-7 h-7 rounded-full bg-surface-card/90 backdrop-blur-sm border border-border-soft flex items-center justify-center text-neutral-subtle hover:text-salmon-deep transition-colors" onclick="toggleWishlist(this)" type="button">
+<span class="material-symbols-outlined text-[16px]">favorite</span>
+</button>
+</div>
+<div class="flex flex-col gap-1 mt-space-sm px-1">
+<span class="font-label-sm text-[11px] text-neutral-subtle uppercase font-semibold">Colorantes &amp; Glitters</span>
+<h3 class="font-headline-sm text-[15px] leading-tight text-chocolate-brown font-bold line-clamp-2 min-h-[38px]">
+              Glitter brillo Gold Star Chemical 5grs
+            </h3>
+<div class="flex flex-wrap items-baseline justify-between gap-x-2 mt-1">
+<span class="font-price-headline text-price-headline text-charcoal-dark font-extrabold">$4.500</span>
+<span class="font-body-sm text-[11px] text-neutral-subtle font-medium">5 gramos</span>
+</div>
+<button class="w-full mt-2 bg-mint-accent hover:bg-mint-light text-mint-deep font-label-md text-label-md py-2 rounded-full transition-all flex items-center justify-center gap-1 font-bold shadow-xs active:scale-95" onclick="addToCart('Glitter Gold Star 5g', 4500)" type="button">
+<span class="material-symbols-outlined text-[16px]">shopping_bag</span>
+<span>Agregar al carrito</span>
+</button>
+</div>
+</div>
+<div class="product-card group bg-surface-card rounded-2xl p-space-sm shadow-xs border border-border-soft hover:shadow-md hover:border-salmon-light transition-all flex flex-col justify-between" data-category="cotillon" data-name="Set de globos futbol 74pcs" data-price="6990" data-stock="true">
+<div class="relative w-full aspect-square rounded-xl bg-bone-white overflow-hidden flex items-center justify-center p-3 border border-border-soft/60">
+<img class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300" data-alt="Soccer themed birthday party balloon kit set de globos futbol 74 pieces with black, white, and green balloons, soccer ball foil accents." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4s47lx1bK2AIr0pINzHbzuEe5H4lWzv113iGcNHgFk-SBuB7_HCXujLdaz-Daq8LdWMS_Sols7ZW_kAzZr211b5nTPk52kk-r7_6hxYwwlwoVK2GYPDalqnsapSL52f5STfqAjQj_PwDHOLGFSjExA6Z8l2BMNIP1HK1RaEJsZQQZGD_NMvtu1o9vywRHTXj2YAwjbEzRRB0ZO8WNC3rPSASxPQqzOT0bW6LW6vlzcgu_wwDPBy_HDw"/>
+<span class="absolute top-2 left-2 bg-mint-accent text-mint-deep font-label-sm text-[10px] px-2 py-0.5 rounded-full uppercase font-bold shadow-xs">Temático</span>
+<button class="wishlist-btn absolute top-2 right-2 w-7 h-7 rounded-full bg-surface-card/90 backdrop-blur-sm border border-border-soft flex items-center justify-center text-neutral-subtle hover:text-salmon-deep transition-colors" onclick="toggleWishlist(this)" type="button">
+<span class="material-symbols-outlined text-[16px]">favorite</span>
+</button>
+</div>
+<div class="flex flex-col gap-1 mt-space-sm px-1">
+<span class="font-label-sm text-[11px] text-neutral-subtle uppercase font-semibold">Cumpleaños &amp; Fiestas</span>
+<h3 class="font-headline-sm text-[15px] leading-tight text-chocolate-brown font-bold line-clamp-2 min-h-[38px]">
+              Set de globos fútbol temático 74pcs
+            </h3>
+<div class="flex flex-wrap items-baseline justify-between gap-x-2 mt-1">
+<span class="font-price-headline text-price-headline text-charcoal-dark font-extrabold">$6.990</span>
+<span class="font-body-sm text-[11px] text-neutral-subtle font-medium">74 piezas</span>
+</div>
+<button class="w-full mt-2 bg-mint-accent hover:bg-mint-light text-mint-deep font-label-md text-label-md py-2 rounded-full transition-all flex items-center justify-center gap-1 font-bold shadow-xs active:scale-95" onclick="addToCart('Set globos futbol 74pcs', 6990)" type="button">
+<span class="material-symbols-outlined text-[16px]">shopping_bag</span>
+<span>Agregar al carrito</span>
+</button>
+</div>
+</div>
+<div class="product-card group bg-surface-card rounded-2xl p-space-sm shadow-xs border border-border-soft hover:shadow-md hover:border-salmon-light transition-all flex flex-col justify-between" data-category="cotillon" data-name="Arco orgánico de globos látex negro y dorado 34pcs" data-price="3990" data-stock="true">
+<div class="relative w-full aspect-square rounded-xl bg-bone-white overflow-hidden flex items-center justify-center p-3 border border-border-soft/60">
+<img class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300" data-alt="Black and metallic chrome gold balloon arch kit 34 pieces styled gracefully as an elegant table runner or party entrance." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZkfih96B4ZkfHOKaeqfXLDquaxxw0jDLnma1OhOGHvy1yegAfUK5P0dyP4l2UYXiedBZ7lIA4T7hnsVV3ewZkGxPR2cPq1HVb8x9DjdJsno0Ghb5jjydF3wmw3S-Ck8L0MlWP-12ETi5bIpzkbVa-PZvhqNfGOWCFjoj1tTKWt2uHiZpNEyU8uKFXYByp8cndon1FInvAqTNqWs5d0VbLRdvRhSdOe1lHu5BZbjpdTk-9JOwoLYhhnA"/>
+<span class="absolute top-2 left-2 bg-vanilla-cream text-badge-sprinkle-text border border-amber-200 font-label-sm text-[10px] px-2 py-0.5 rounded-full uppercase font-bold">Elegante</span>
+<button class="wishlist-btn absolute top-2 right-2 w-7 h-7 rounded-full bg-surface-card/90 backdrop-blur-sm border border-border-soft flex items-center justify-center text-neutral-subtle hover:text-salmon-deep transition-colors" onclick="toggleWishlist(this)" type="button">
+<span class="material-symbols-outlined text-[16px]">favorite</span>
+</button>
+</div>
+<div class="flex flex-col gap-1 mt-space-sm px-1">
+<span class="font-label-sm text-[11px] text-neutral-subtle uppercase font-semibold">Kits de Fiesta</span>
+<h3 class="font-headline-sm text-[15px] leading-tight text-chocolate-brown font-bold line-clamp-2 min-h-[38px]">
+              Arco orgánico globos látex negro &amp; dorado 34pcs
+            </h3>
+<div class="flex flex-wrap items-baseline justify-between gap-x-2 mt-1">
+<span class="font-price-headline text-price-headline text-charcoal-dark font-extrabold">$3.990</span>
+<span class="font-body-sm text-[11px] text-neutral-subtle font-medium">34 piezas</span>
+</div>
+<button class="w-full mt-2 bg-mint-accent hover:bg-mint-light text-mint-deep font-label-md text-label-md py-2 rounded-full transition-all flex items-center justify-center gap-1 font-bold shadow-xs active:scale-95" onclick="addToCart('Arco negro y dorado 34pcs', 3990)" type="button">
+<span class="material-symbols-outlined text-[16px]">shopping_bag</span>
+<span>Agregar al carrito</span>
+</button>
+</div>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row items-center justify-between gap-space-md pt-space-lg border-t border-border-soft">
+<p class="font-body-md text-body-md text-chocolate-brown font-medium">
+          Página 1 de 63 • Mostrando 12 de 755 productos en stock
+        </p>
+<div class="flex flex-wrap items-center justify-center gap-space-xs">
+<button class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-neutral-subtle cursor-not-allowed" disabled="">
+<span class="material-symbols-outlined text-[18px]">chevron_left</span>
+</button>
+<button class="w-9 h-9 rounded-full bg-salmon-primary text-charcoal-dark font-bold font-label-sm text-label-sm flex items-center justify-center shadow-xs">1</button>
+<button class="w-9 h-9 rounded-full bg-surface-card hover:bg-vanilla-cream text-chocolate-brown font-label-sm text-label-sm flex items-center justify-center border border-border-soft font-bold transition-colors">2</button>
+<button class="w-9 h-9 rounded-full bg-surface-card hover:bg-vanilla-cream text-chocolate-brown font-label-sm text-label-sm flex items-center justify-center border border-border-soft font-bold transition-colors">3</button>
+<span class="text-neutral-subtle px-1">...</span>
+<button class="w-9 h-9 rounded-full bg-surface-card hover:bg-vanilla-cream text-chocolate-brown font-label-sm text-label-sm flex items-center justify-center border border-border-soft font-bold transition-colors">63</button>
+<button class="w-9 h-9 rounded-full bg-surface-card hover:bg-salmon-subtle text-salmon-deep flex items-center justify-center shadow-xs border border-border-soft transition-colors">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<section class="w-full py-space-xl px-gutter bg-vanilla-soft border-y border-border-soft" id="especial-alfajores">
+<div class="max-w-[1320px] mx-auto bg-surface-card rounded-3xl p-space-xl shadow-md border border-border-soft">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<div class="lg:col-span-5 flex flex-col gap-space-sm">
+<span class="bg-vanilla-cream text-chocolate-brown border border-amber-200 font-label-sm text-label-sm px-3 py-1 rounded-full uppercase self-start font-bold">
+            Receta &amp; Técnica Pastelera
+          </span>
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-chocolate-brown font-extrabold leading-tight">
+            Todo para tus Alfajores Artesanales
+          </h2>
+<p class="font-body-md text-body-md text-chocolate-brown/80 font-medium">
+            Logra el alfajor perfecto con coberturas de chocolate profesionales sin necesidad de templado complicado, manjar repostero de consistencia densa y sprinkles personalizados La Choli.
+          </p>
+<div class="flex flex-col gap-2 pt-2">
+<div class="flex items-center gap-2 text-chocolate-brown font-body-sm text-body-sm font-semibold">
+<span class="material-symbols-outlined text-mint-deep text-[18px]">check_circle</span>
+<span>Galletas de alfajor y premezclas listas para hornear</span>
+</div>
+<div class="flex items-center gap-2 text-chocolate-brown font-body-sm text-body-sm font-semibold">
+<span class="material-symbols-outlined text-mint-deep text-[18px]">check_circle</span>
+<span>Papel antigrasa temático y cajas con visor para presentación</span>
+</div>
+<div class="flex items-center gap-2 text-chocolate-brown font-body-sm text-body-sm font-semibold">
+<span class="material-symbols-outlined text-mint-deep text-[18px]">check_circle</span>
+<span>Brillos comestibles y fondant para sellos personalizados</span>
+</div>
+</div>
+<div class="pt-space-sm">
+<a class="inline-flex items-center gap-2 bg-salmon-primary hover:bg-salmon-deep text-charcoal-dark font-label-lg text-label-lg px-space-lg py-2.5 rounded-full transition-all shadow-md font-bold active:scale-95" href="https://wa.me/56954076195?text=Hola%20La%20Choli,%20quiero%20asesoria%20para%20insumos%20de%20alfajores">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+<span>Asesoría por WhatsApp</span>
+</a>
+</div>
+</div>
+<div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-3 gap-space-md">
+<div class="bg-vanilla-soft rounded-2xl p-space-md flex flex-col items-center text-center shadow-xs border border-border-soft">
+<div class="w-12 h-12 rounded-full bg-salmon-subtle text-salmon-deep flex items-center justify-center mb-3">
+<span class="material-symbols-outlined text-[24px]">water_drop</span>
+</div>
+<h4 class="font-headline-sm text-[16px] text-chocolate-brown font-bold">1. Cobertura Fluida</h4>
+<p class="font-body-sm text-body-sm text-neutral-subtle mt-1 font-medium">Caravella o Coverlux disuelta a 45°C para un baño parejo y brillante.</p>
+</div>
+<div class="bg-vanilla-soft rounded-2xl p-space-md flex flex-col items-center text-center shadow-xs border border-border-soft">
+<div class="w-12 h-12 rounded-full bg-vanilla-cream text-chocolate-brown flex items-center justify-center mb-3">
+<span class="material-symbols-outlined text-[24px]">bakery_dining</span>
+</div>
+<h4 class="font-headline-sm text-[16px] text-chocolate-brown font-bold">2. Manjar Firme</h4>
+<p class="font-body-sm text-body-sm text-neutral-subtle mt-1 font-medium">Langer o Nestlé 1kg que no gotea ni deforma tus tapas de masa suave.</p>
+</div>
+<div class="bg-vanilla-soft rounded-2xl p-space-md flex flex-col items-center text-center shadow-xs border border-border-soft">
+<div class="w-12 h-12 rounded-full bg-mint-soft text-mint-deep flex items-center justify-center mb-3">
+<span class="material-symbols-outlined text-[24px]">auto_fix_high</span>
+</div>
+<h4 class="font-headline-sm text-[16px] text-chocolate-brown font-bold">3. Toque Sprinkle</h4>
+<p class="font-body-sm text-body-sm text-neutral-subtle mt-1 font-medium">Corona con palitos de fondant o polvo perlado Gold Star Chemical.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="w-full py-space-xl px-gutter bg-bone-white">
+<div class="max-w-[1320px] mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-lg">
+<div class="bg-surface-card p-space-lg rounded-2xl shadow-xs border border-border-soft flex flex-col gap-2">
+<div class="w-12 h-12 rounded-full bg-mint-soft text-mint-deep flex items-center justify-center">
+<span class="material-symbols-outlined text-[26px]">local_shipping</span>
+</div>
+<h3 class="font-headline-sm text-[17px] text-chocolate-brown font-bold">Despachos a todo Chile</h3>
+<p class="font-body-md text-body-md text-chocolate-brown/80 font-medium">Envíos express por Starken, Blue Express y Chilexpress con embalaje reforzado.</p>
+</div>
+<div class="bg-surface-card p-space-lg rounded-2xl shadow-xs border border-border-soft flex flex-col gap-2">
+<div class="w-12 h-12 rounded-full bg-salmon-subtle text-salmon-deep flex items-center justify-center">
+<span class="material-symbols-outlined text-[26px]">storefront</span>
+</div>
+<h3 class="font-headline-sm text-[17px] text-chocolate-brown font-bold">Tienda en Quilicura</h3>
+<p class="font-body-md text-body-md text-chocolate-brown/80 font-medium">Av. Bernardo O'Higgins 321, Local 3. Retira gratis de lunes a sábado.</p>
+</div>
+<div class="bg-surface-card p-space-lg rounded-2xl shadow-xs border border-border-soft flex flex-col gap-2">
+<div class="w-12 h-12 rounded-full bg-vanilla-cream text-chocolate-brown flex items-center justify-center">
+<span class="material-symbols-outlined text-[26px]">price_change</span>
+</div>
+<h3 class="font-headline-sm text-[17px] text-chocolate-brown font-bold">Venta Mayor &amp; Detalle</h3>
+<p class="font-body-md text-body-md text-chocolate-brown/80 font-medium">Precios convenientes para pastelerías, emprendedores y celebraciones caseras.</p>
+</div>
+<div class="bg-surface-card p-space-lg rounded-2xl shadow-xs border border-border-soft flex flex-col gap-2">
+<div class="w-12 h-12 rounded-full bg-salmon-subtle text-salmon-deep flex items-center justify-center">
+<span class="material-symbols-outlined text-[26px]">headset_mic</span>
+</div>
+<h3 class="font-headline-sm text-[17px] text-chocolate-brown font-bold">Atención WhatsApp</h3>
+<p class="font-body-md text-body-md text-chocolate-brown/80 font-medium">¿Dudas con un producto? Escríbenos al +56954076195 y resolvemos al instante.</p>
+</div>
+</div>
+</div>
+</section>
+<div class="fixed bottom-6 right-6 z-50 bg-charcoal-dark text-bone-white px-space-md py-3 rounded-full shadow-2xl flex items-center gap-3 transition-transform translate-y-32 duration-300 pointer-events-none max-w-[calc(100vw-3rem)]" id="cart-toast">
+<div class="w-7 h-7 rounded-full bg-mint-accent text-mint-deep flex items-center justify-center font-bold">
+<span class="material-symbols-outlined text-[16px]">done</span>
+</div>
+<span class="font-label-md text-label-md font-bold" id="toast-message">Producto añadido al carrito</span>
+</div>
+</div>
+<script>
+  function applyFilter(category, btnElement) {
+    const buttons = document.querySelectorAll('.filter-btn');
+    buttons.forEach(b => {
+      b.classList.remove('bg-salmon-primary', 'text-charcoal-dark', 'active');
+      b.classList.add('bg-bone-white', 'text-chocolate-brown');
+    });
+    btnElement.classList.remove('bg-bone-white', 'text-chocolate-brown');
+    btnElement.classList.add('bg-salmon-primary', 'text-charcoal-dark', 'active');
+    const cards = document.querySelectorAll('.product-card');
+    let visibleCount = 0;
+    cards.forEach(card => {
+      const cardCategory = card.getAttribute('data-category') || '';
+      const inStock = card.getAttribute('data-stock') === 'true';
+      if (category === 'all') {
+        card.style.display = 'flex';
+        visibleCount++;
+      } else if (category === 'stock') {
+        if (inStock) { card.style.display = 'flex'; visibleCount++; }
+        else { card.style.display = 'none'; }
+      } else {
+        if (cardCategory.includes(category)) { card.style.display = 'flex'; visibleCount++; }
+        else { card.style.display = 'none'; }
+      }
+    });
+    document.getElementById('results-count').innerText = `Mostrando ${visibleCount} de 755 artículos`;
+  }
+  function filterCategory(cat) {
+    const targetBtn = document.querySelector(`.filter-btn[data-filter="${cat}"]`);
+    if (targetBtn) {
+      applyFilter(cat, targetBtn);
+      const catalogSection = document.getElementById('catalogo');
+      if (catalogSection) { catalogSection.scrollIntoView({ behavior: 'smooth' }); }
+    }
+  }
+  function handleSearch(term) {
+    const cleanTerm = term.toLowerCase().trim();
+    const cards = document.querySelectorAll('.product-card');
+    let visibleCount = 0;
+    cards.forEach(card => {
+      const name = (card.getAttribute('data-name') || '').toLowerCase();
+      if (!cleanTerm || name.includes(cleanTerm)) { card.style.display = 'flex'; visibleCount++; }
+      else { card.style.display = 'none'; }
+    });
+    document.getElementById('results-count').innerText = `Mostrando ${visibleCount} de 755 artículos`;
+  }
+  function toggleStockOnly(checked) {
+    const cards = document.querySelectorAll('.product-card');
+    let visibleCount = 0;
+    cards.forEach(card => {
+      const inStock = card.getAttribute('data-stock') === 'true';
+      if (checked && !inStock) { card.style.display = 'none'; }
+      else { card.style.display = 'flex'; visibleCount++; }
+    });
+    document.getElementById('results-count').innerText = `Mostrando ${visibleCount} de 755 artículos`;
+  }
+  function filterByPrice(val) {
+    document.getElementById('price-val').innerText = `$${Number(val).toLocaleString('es-CL')}`;
+    const cards = document.querySelectorAll('.product-card');
+    let visibleCount = 0;
+    cards.forEach(card => {
+      const price = Number(card.getAttribute('data-price') || 0);
+      if (price <= Number(val)) { card.style.display = 'flex'; visibleCount++; }
+      else { card.style.display = 'none'; }
+    });
+    document.getElementById('results-count').innerText = `Mostrando ${visibleCount} de 755 artículos`;
+  }
+  function sortProducts(criteria) {
+    const grid = document.getElementById('product-grid');
+    const cards = Array.from(document.querySelectorAll('.product-card'));
+    cards.sort((a, b) => {
+      const priceA = Number(a.getAttribute('data-price') || 0);
+      const priceB = Number(b.getAttribute('data-price') || 0);
+      const nameA = a.getAttribute('data-name') || '';
+      const nameB = b.getAttribute('data-name') || '';
+      if (criteria === 'price-asc') return priceA - priceB;
+      if (criteria === 'price-desc') return priceB - priceA;
+      if (criteria === 'alpha') return nameA.localeCompare(nameB);
+      return 0;
+    });
+    cards.forEach(c => grid.appendChild(c));
+  }
+  function setColumns(cols) {
+    const grid = document.getElementById('product-grid');
+    const btn4 = document.getElementById('view-4-col');
+    const btn5 = document.getElementById('view-5-col');
+    if (cols === 5) {
+      grid.className = 'grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-space-md';
+      btn5.classList.add('bg-vanilla-cream', 'text-chocolate-brown');
+      btn5.classList.remove('text-neutral-subtle');
+      btn4.classList.remove('bg-vanilla-cream', 'text-chocolate-brown');
+      btn4.classList.add('text-neutral-subtle');
+    } else {
+      grid.className = 'grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-space-md';
+      btn4.classList.add('bg-vanilla-cream', 'text-chocolate-brown');
+      btn4.classList.remove('text-neutral-subtle');
+      btn5.classList.remove('bg-vanilla-cream', 'text-chocolate-brown');
+      btn5.classList.add('text-neutral-subtle');
+    }
+  }
+  function addToCart(title, price) {
+    const toast = document.getElementById('cart-toast');
+    const msg = document.getElementById('toast-message');
+    msg.innerText = `¡${title} añadido! ($${Number(price).toLocaleString('es-CL')})`;
+    toast.classList.remove('translate-y-32');
+    setTimeout(() => { toast.classList.add('translate-y-32'); }, 2800);
+  }
+  function toggleWishlist(btn) {
+    const icon = btn.querySelector('.material-symbols-outlined');
+    if (btn.classList.contains('text-salmon-deep')) {
+      btn.classList.remove('text-salmon-deep');
+      btn.classList.add('text-neutral-subtle');
+      icon.style.fontVariationSettings = "'FILL' 0";
+    } else {
+      btn.classList.remove('text-neutral-subtle');
+      btn.classList.add('text-salmon-deep');
+      icon.style.fontVariationSettings = "'FILL' 1";
+    }
+  }
+</script></main><footer class="w-full bg-bone-white text-charcoal-dark pt-space-xxl pb-space-lg border-t border-border-soft shadow-[0_-4px_24px_rgba(92,64,51,0.03)]"><div class="max-w-[1320px] mx-auto px-gutter"><div class="bg-vanilla-cream rounded-xl p-space-xl mb-space-xl flex flex-col md:flex-row items-center justify-between gap-space-lg border border-amber-200 shadow-sm"><div class="max-w-xl text-center md:text-left"><span class="bg-salmon-primary text-charcoal-dark font-label-sm text-label-sm px-space-sm py-1 rounded-full uppercase font-bold shadow-xs">Club Dulce</span><h3 class="font-headline-md text-headline-md text-chocolate-brown mt-space-xs font-extrabold">¡Suscríbete y recibe 10% OFF en tu primera compra!</h3><p class="font-body-md text-body-md text-chocolate-brown/80 mt-space-xs font-medium">Sé el primero en enterarte de la llegada de nuevos sprinkles perlados, moldes de silicona y talleres de repostería.</p></div><form class="w-full md:w-auto flex flex-col sm:flex-row gap-space-xs"><input class="bg-surface-card px-space-md py-space-sm rounded-full outline-none text-charcoal-dark font-body-md text-body-md min-w-0 w-full sm:w-auto sm:min-w-[280px] max-w-full border border-border-soft shadow-xs focus:ring-2 focus:ring-mint-accent" placeholder="Ingresa tu correo dulce..." type="email"/><button class="bg-salmon-primary hover:bg-salmon-deep text-charcoal-dark font-label-lg text-label-lg px-space-lg py-space-sm rounded-full transition-all font-bold shadow-xs active:scale-95" type="button">Obtener Cupón</button></form></div><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-xl mb-space-xl"><div class="flex flex-col gap-space-sm"><div class="flex items-center gap-space-xs"><img src="assets/img/logo-la-choli.png" alt="La Choli" class="h-9 w-9 rounded-full object-cover"/><span class="font-headline-sm text-headline-sm text-chocolate-brown font-extrabold">La Choli Sprinkles</span></div><p class="font-body-md text-body-md text-chocolate-brown/80 font-medium">Tu rincón favorito para endulzar cada celebración con insumos premium de repostería y cotillón temático en Chile.</p><div class="flex items-center gap-space-xs text-chocolate-brown pt-space-xs"><a class="w-9 h-9 rounded-full bg-surface-card hover:bg-salmon-primary hover:text-charcoal-dark flex items-center justify-center transition-colors border border-border-soft shadow-xs" href="#"><span class="material-symbols-outlined text-[20px]">photo_camera</span></a><a class="w-9 h-9 rounded-full bg-surface-card hover:bg-salmon-primary hover:text-charcoal-dark flex items-center justify-center transition-colors border border-border-soft shadow-xs" href="#"><span class="material-symbols-outlined text-[20px]">public</span></a><a class="w-9 h-9 rounded-full bg-surface-card hover:bg-mint-accent hover:text-mint-deep flex items-center justify-center transition-colors border border-border-soft shadow-xs" href="https://wa.me/56954076195"><span class="material-symbols-outlined text-[20px]">chat</span></a></div></div><div class="flex flex-col gap-space-sm"><h4 class="font-headline-sm text-headline-sm text-chocolate-brown font-extrabold">Tienda &amp; Horarios</h4><div class="flex items-start gap-space-xs text-chocolate-brown/80 font-body-md text-body-md font-medium"><span class="material-symbols-outlined text-salmon-deep text-[20px] shrink-0 mt-0.5">location_on</span><span>Av. Bernardo O'Higgins 321, Quilicura, Región Metropolitana</span></div><div class="flex items-start gap-space-xs text-chocolate-brown/80 font-body-md text-body-md font-medium"><span class="material-symbols-outlined text-salmon-deep text-[20px] shrink-0 mt-0.5">schedule</span><div><p>Lunes a Viernes: 10:00 - 19:30 hrs</p><p>Sábados: 10:30 - 15:30 hrs</p><p>Domingos y Festivos: Cerrado</p></div></div></div><div class="flex flex-col gap-space-sm"><h4 class="font-headline-sm text-headline-sm text-chocolate-brown font-extrabold">Atención al Cliente</h4><div class="flex flex-col gap-space-xs font-body-md text-body-md text-chocolate-brown/80 font-medium"><a class="hover:text-salmon-deep transition-colors" href="terminos.html">T&eacute;rminos del servicio</a><a class="hover:text-salmon-deep transition-colors" href="envios.html">Políticas de Despacho y Envíos</a><a class="hover:text-salmon-deep transition-colors" href="reembolsos.html">Cambios, Garantías y Devoluciones</a><a class="hover:text-salmon-deep transition-colors" href="terminos.html">Términos y Condiciones</a><a class="text-chocolate-brown hover:text-salmon-deep font-label-md text-label-md flex items-center gap-1 font-bold mt-1" href="https://wa.me/56954076195"><span class="material-symbols-outlined text-[18px] text-mint-deep">support_agent</span> WhatsApp: +56954076195</a></div></div><div class="flex flex-col gap-space-sm"><h4 class="font-headline-sm text-headline-sm text-chocolate-brown font-extrabold">Medios de Pago</h4><p class="font-body-md text-body-md text-chocolate-brown/80 font-medium">Paga de forma 100% segura mediante Webpay Plus, tarjetas de crédito, débito y transferencia bancaria.</p><div class="flex flex-wrap gap-space-xs"><span class="bg-surface-card px-space-sm py-1 rounded font-label-sm text-label-sm text-chocolate-brown border border-border-soft shadow-xs font-bold">WebPay Plus</span><span class="bg-surface-card px-space-sm py-1 rounded font-label-sm text-label-sm text-chocolate-brown border border-border-soft shadow-xs font-bold">RedCompra</span><span class="bg-surface-card px-space-sm py-1 rounded font-label-sm text-label-sm text-chocolate-brown border border-border-soft shadow-xs font-bold">MercadoPago</span><span class="bg-surface-card px-space-sm py-1 rounded font-label-sm text-label-sm text-chocolate-brown border border-border-soft shadow-xs font-bold">Transbank</span></div></div></div><div class="pt-space-md border-t border-border-soft flex flex-col md:flex-row items-center justify-between gap-space-sm font-body-sm text-body-sm text-neutral-subtle font-medium"><p>© 2025 La Choli Sprinkles SpA. Todos los derechos reservados. Hecho con dulzura en Quilicura, Chile.</p><div class="flex items-center gap-space-md"><a class="hover:text-salmon-deep transition-colors" href="privacidad.html">Privacidad</a><a class="hover:text-salmon-deep transition-colors" href="#">Seguridad de Compra</a><a class="hover:text-salmon-deep transition-colors" href="#">Soporte</a></div></div></div></footer>
+<script src="assets/data/products-data.js"></script>
+<script>
+var headerSelIdx = -1, headerMatches = [], headerTotal = 0, headerTerm = '';
+function headerNorm(s) { return (s || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, ''); }
+function headerEsc(s) { return String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;'); }
+function headerHay(p) { return headerNorm(p.t + ' ' + (p.type || '') + ' ' + (p.tags || []).join(' ')); }
+function headerMatchAll(hay, q) { return q.split(/\s+/).filter(Boolean).every(w => hay.indexOf(w) >= 0); }
+function headerFmt(n) { return '$' + Number(n).toLocaleString('es-CL'); }
+function headerImg(p) { return p.img + (p.img.indexOf('?') >= 0 ? '&' : '?') + 'width=100'; }
+function headerUrl(p) { return 'https://lacholi.cl/products/' + p.h; }
+function headerSuggest(val) {
+  const box = document.getElementById('header-suggest');
+  if (!box) return;
+  const q = headerNorm(val.trim());
+  headerSelIdx = -1; headerTerm = val;
+  if (!q || typeof LACHOLI_PRODUCTS === 'undefined') { box.classList.add('hidden'); box.innerHTML = ''; return; }
+  const all = LACHOLI_PRODUCTS.filter(p => headerMatchAll(headerHay(p), q));
+  headerTotal = all.length;
+  headerMatches = all.slice(0, 7);
+  if (!all.length) {
+    box.innerHTML = '<div class="px-space-md py-space-md text-center font-body-md text-body-md text-neutral-subtle font-medium">Sin coincidencias — prueba con otra palabra</div>';
+    box.classList.remove('hidden');
+    return;
+  }
+  let html = '';
+  headerMatches.forEach(function (p, i) {
+    html += '<a href="' + headerUrl(p) + '" target="_blank" rel="noopener" data-i="' + i + '" class="hs-item flex items-center gap-3 px-space-md py-2.5 hover:bg-vanilla-cream transition-colors border-b border-border-soft/60">'
+      + '<img loading="lazy" src="' + headerImg(p) + '" alt="' + headerEsc(p.t) + '" class="w-10 h-10 rounded-lg object-contain bg-bone-white border border-border-soft shrink-0"/>'
+      + '<div class="flex-1 min-w-0"><p class="font-label-md text-label-md text-chocolate-brown font-bold truncate">' + headerEsc(p.t) + '</p>'
+      + '<p class="font-body-sm text-body-sm text-neutral-subtle capitalize">' + headerEsc(p.type || 'La Choli') + (p.a ? '' : ' · Agotado') + '</p></div>'
+      + '<span class="font-price-headline text-price-headline text-charcoal-dark font-extrabold shrink-0">' + (p.p === 0 ? 'Consultar' : headerFmt(p.p)) + '</span></a>';
+  });
+  html += '<button onclick="headerGoAll()" type="button" class="w-full text-center font-label-md text-label-md text-salmon-deep hover:bg-salmon-subtle font-bold py-2.5 transition-colors">Ver los ' + headerTotal + ' resultados en el catálogo</button>';
+  box.innerHTML = html;
+  box.classList.remove('hidden');
+}
+function headerPaintSel() {
+  const items = document.querySelectorAll('#header-suggest .hs-item');
+  items.forEach(function (el, i) {
+    if (i === headerSelIdx) el.classList.add('bg-vanilla-cream');
+    else el.classList.remove('bg-vanilla-cream');
+  });
+}
+function headerSearchKey(e) {
+  const box = document.getElementById('header-suggest');
+  if (e.key === 'Escape') { if (box) { box.classList.add('hidden'); } return; }
+  if (e.key === 'ArrowDown' || e.key === 'ArrowUp') {
+    e.preventDefault();
+    const n = headerMatches.length;
+    if (!n) return;
+    headerSelIdx = e.key === 'ArrowDown' ? (headerSelIdx + 1) % n : (headerSelIdx - 1 + n) % n;
+    headerPaintSel();
+    return;
+  }
+  if (e.key === 'Enter') {
+    e.preventDefault();
+    if (headerSelIdx >= 0 && headerMatches[headerSelIdx]) {
+      window.open(headerUrl(headerMatches[headerSelIdx]), '_blank');
+    } else {
+      headerGoAll();
+    }
+  }
+}
+function headerGoAll() {
+  const box = document.getElementById('header-suggest');
+  if (box) box.classList.add('hidden');
+  window.location.href = 'catalogo.html?q=' + encodeURIComponent(headerTerm);
+}
+document.addEventListener('click', function (e) {
+  const box = document.getElementById('header-suggest');
+  if (!box || box.classList.contains('hidden')) return;
+  if (e.target.closest && (e.target.closest('#header-suggest') || e.target.closest('#header-search'))) return;
+  box.classList.add('hidden');
+});
+</script>
+</body></html>
